@@ -1,0 +1,995 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="220" height="88" id="svg2" version="1.1" ns1:version="0.47 r22583" ns2:docname="Sandia_National_Laboratories_logo.svg" viewBox="0 0 220 88">
+  <defs id="defs4">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3444">
+      <path d="m 113.34,537.42 1.02,0 0,17.34 -1.02,0 0,-17.34 z" id="path3446" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3522">
+      <path d="m 157.56,117.9 13.98,0 0,16.2 -13.98,0 0,-16.2 z" id="path3524" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3538">
+      <path d="m 157.56,101.7 13.98,0 0,16.2 -13.98,0 0,-16.2 z" id="path3540" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3690">
+      <path d="m 171.54,117.9 57.18,0 0,16.2 -57.18,0 0,-16.2 z" id="path3692" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3734">
+      <path d="m 171.54,85.5 57.18,0 0,16.2 -57.18,0 0,-16.2 z" id="path3736" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3890">
+      <path d="m 228.72,101.7 57.18,0 0,16.2 -57.18,0 0,-16.2 z" id="path3892" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4006">
+      <path d="m 285.9,506.4 42.18,0 0,16.2 -42.18,0 0,-16.2 z" id="path4008" />
+    </clipPath>
+    </defs>
+  <ns2:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" ns1:pageopacity="0.0" ns1:pageshadow="2" ns1:zoom="4.0871546" ns1:cx="110.367" ns1:cy="43.999998" ns1:document-units="px" ns1:current-layer="layer1" showgrid="false" ns1:window-width="1024" ns1:window-height="689" ns1:window-x="0" ns1:window-y="27" ns1:window-maximized="1" />
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </metadata>
+  <g ns1:label="Layer 1" ns1:groupmode="layer" id="layer1" transform="translate(-215.65296,-544.25292)">
+    <g id="g3440" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g3442" clip-path="url(#clipPath3444)">
+        <text transform="matrix(0.99810443,0,0,-1,113.34,540.9)" id="text3448">
+          <tspan style="font-size:13.97999954px;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Myriad Pro;-inkscape-font-specification:MyriadPro-Bold" x="0" y="0" id="tspan3450">E</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g3518" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g3520" clip-path="url(#clipPath3522)">
+        <text transform="matrix(0.99810833,0,0,-1,170.64,122.2201)" id="text3526">
+          <tspan style="font-size:12px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:MinionPro-Regular" x="0" y="0" id="tspan3528">n</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g3534" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g3536" clip-path="url(#clipPath3538)">
+        <text transform="matrix(0.99810833,0,0,-1,170.82,106.0201)" id="text3542">
+          <tspan style="font-size:12px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:MinionPro-Regular" x="0" y="0" id="tspan3544">l</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g3686" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g3688" clip-path="url(#clipPath3690)">
+        <text transform="matrix(0.99810833,0,0,-1,227.88,122.2201)" id="text3694">
+          <tspan style="font-size:12px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:MinionPro-Regular" x="0" y="0" id="tspan3696">n</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g3730" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g3732" clip-path="url(#clipPath3734)">
+        <text transform="matrix(0.99810833,0,0,-1,227.94,89.82)" id="text3738">
+          <tspan style="font-size:12px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:MinionPro-Regular" x="0" y="0" id="tspan3740">2</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g3886" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g3888" clip-path="url(#clipPath3890)">
+        <text transform="matrix(0.99810833,0,0,-1,285.36,106.0201)" id="text3894">
+          <tspan style="font-size:12px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:MinionPro-Regular" x="0" y="0" id="tspan3896">,</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g4002" transform="matrix(1.25,0,0,-1.25,520.85177,817.34355)">
+      <g id="g4004" clip-path="url(#clipPath4006)">
+        <text transform="matrix(0.99810833,0,0,-1,283.44,510.72)" id="text4010">
+          <tspan style="font-size:12px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:MinionPro-Regular" x="0" y="0" id="tspan4012">J</tspan>
+        </text>
+      </g>
+    </g>
+    <text id="text5280" x="2581.1704" y="821.48462" style="font-size:15px">
+      <tspan style="font-size:16.25px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2581.1704" y="821.48462" id="tspan5282" />
+    </text>
+    <text id="text5288" x="2752.5532" y="821.48462" style="font-size:15px">
+      <tspan style="font-size:18.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2752.5532" y="821.48462" id="tspan5290" />
+    </text>
+    <text id="text5296" x="2786.6218" y="821.48462" style="font-size:15px">
+      <tspan style="font-size:18.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2786.6218" y="821.48462" id="tspan5298" />
+    </text>
+    <text id="text5304" x="2581.1704" y="838.98462" style="font-size:15px">
+      <tspan style="font-size:18.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2581.1704" y="838.98462" id="tspan5306" />
+    </text>
+    <text id="text5312" x="2838.0029" y="838.98462" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2838.0029" y="838.98462" id="tspan5314" />
+    </text>
+    <text id="text5320" x="2861.1716" y="838.98462" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2861.1716" y="838.98462" id="tspan5322" />
+    </text>
+    <text id="text5328" x="2815.938" y="851.48462" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2815.938" y="851.48462" id="tspan5330" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5366" x="570.95776" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="570.95776" y="364.42841" id="tspan5368" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5374" x="622.48346" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="622.48346" y="364.42841" id="tspan5376" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5382" x="655.5816" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="655.5816" y="364.42841" id="tspan5384" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5390" x="700.26184" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="700.26184" y="364.42841" id="tspan5392" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5398" x="730.85925" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="730.85925" y="364.42841" id="tspan5400" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5406" x="782.11987" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="782.11987" y="364.42841" id="tspan5408" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5414" x="830.38422" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="830.38422" y="364.42841" id="tspan5416" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5422" x="886.11633" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="886.11633" y="364.42841" id="tspan5424" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5430" x="914.92737" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="914.92737" y="364.42841" id="tspan5432" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5438" x="939.91235" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="939.91235" y="364.42841" id="tspan5440" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5442" x="943.11328" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="943.11328" y="364.42841" id="tspan5444" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5450" x="550.24634" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="550.24634" y="381.71509" id="tspan5452" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5458" x="596.35553" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="596.35553" y="381.71509" id="tspan5460" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5466" x="654.01227" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="654.01227" y="381.71509" id="tspan5468" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5478" x="583.83051" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="583.83051" y="409.37372" id="tspan5480" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5486" x="640.83038" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="640.83038" y="409.37372" id="tspan5488" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5494" x="677.98511" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="677.98511" y="409.37372" id="tspan5496" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5502" x="706.7962" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="706.7962" y="409.37372" id="tspan5504" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5510" x="731.78119" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="731.78119" y="409.37372" id="tspan5512" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5518" x="763.81909" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="763.81909" y="409.37372" id="tspan5520" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5526" x="803.54382" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="803.54382" y="409.37372" id="tspan5528" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5534" x="816.35895" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="816.35895" y="409.37372" id="tspan5536" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5542" x="841.98932" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="841.98932" y="409.37372" id="tspan5544" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5550" x="854.80444" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="854.80444" y="409.37372" id="tspan5552" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5558" x="882.34784" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="882.34784" y="409.37372" id="tspan5560" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5566" x="907.97815" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="907.97815" y="409.37372" id="tspan5568" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5574" x="940.00464" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="940.00464" y="409.37372" id="tspan5576" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5582" x="961.78577" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="961.78577" y="409.37372" id="tspan5584" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5590" x="550.88019" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="550.88019" y="426.66034" id="tspan5592" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5598" x="567.53296" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="567.53296" y="426.66034" id="tspan5600" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5606" x="601.47241" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="601.47241" y="426.66034" id="tspan5608" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5614" x="623.89893" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="623.89893" y="426.66034" id="tspan5616" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5622" x="656.92798" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="656.92798" y="426.66034" id="tspan5624" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5630" x="698.5542" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="698.5542" y="426.66034" id="tspan5632" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5638" x="740.19196" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="740.19196" y="426.66034" id="tspan5640" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5646" x="760.04858" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="760.04858" y="426.66034" id="tspan5648" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5654" x="802.61981" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="802.61981" y="426.66034" id="tspan5656" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5662" x="831.44244" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="831.44244" y="426.66034" id="tspan5664" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5670" x="853.22357" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="853.22357" y="426.66034" id="tspan5672" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5678" x="905.09503" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="905.09503" y="426.66034" id="tspan5680" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5686" x="931.78564" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="931.78564" y="426.66034" id="tspan5688" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5698" x="578.85199" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="578.85199" y="454.31897" id="tspan5700" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5706" x="617.9198" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="617.9198" y="454.31897" id="tspan5708" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5714" x="633.93878" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="633.93878" y="454.31897" id="tspan5716" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5722" x="667.88971" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="667.88971" y="454.31897" id="tspan5724" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5730" x="680.7049" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="680.7049" y="454.31897" id="tspan5732" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5738" x="717.21429" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="717.21429" y="454.31897" id="tspan5740" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5746" x="763.33508" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="763.33508" y="454.31897" id="tspan5748" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5754" x="830.44183" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="830.44183" y="454.31897" id="tspan5756" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5762" x="874.00415" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="874.00415" y="454.31897" id="tspan5764" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5770" x="925.26489" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="925.26489" y="454.31897" id="tspan5772" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5778" x="938.07996" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="938.07996" y="454.31897" id="tspan5780" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5786" x="978.4386" y="454.31897" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="978.4386" y="454.31897" id="tspan5788" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5794" x="579.70276" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="579.70276" y="471.60565" id="tspan5796" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5802" x="635.43488" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="635.43488" y="471.60565" id="tspan5804" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5810" x="659.12915" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="659.12915" y="471.60565" id="tspan5812" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5818" x="685.8197" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="685.8197" y="471.60565" id="tspan5820" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5826" x="725.5329" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="725.5329" y="471.60565" id="tspan5828" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5834" x="747.31409" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="747.31409" y="471.60565" id="tspan5836" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5842" x="776.13666" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="776.13666" y="471.60565" id="tspan5844" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5850" x="812.00073" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="812.00073" y="471.60565" id="tspan5852" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5858" x="847.2309" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="847.2309" y="471.60565" id="tspan5860" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5870" x="550.87067" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="550.87067" y="499.26428" id="tspan5872" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5878" x="606.87939" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="606.87939" y="499.26428" id="tspan5880" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5886" x="625.45679" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="625.45679" y="499.26428" id="tspan5888" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5894" x="654.26788" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="654.26788" y="499.26428" id="tspan5896" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5902" x="679.25281" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="679.25281" y="499.26428" id="tspan5904" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5910" x="717.6983" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="717.6983" y="499.26428" id="tspan5912" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5918" x="767.44928" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="767.44928" y="499.26428" id="tspan5920" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5926" x="798.19647" y="499.26428" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="798.19647" y="499.26428" id="tspan5928" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5934" x="554.51038" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="554.51038" y="516.5509" id="tspan5936" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5942" x="578.63098" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="578.63098" y="516.5509" id="tspan5944" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5950" x="603.61597" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="603.61597" y="516.5509" id="tspan5952" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5958" x="640.12537" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="640.12537" y="516.5509" id="tspan5960" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5966" x="690.09528" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="690.09528" y="516.5509" id="tspan5968" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5974" x="729.80847" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="729.80847" y="516.5509" id="tspan5976" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5982" x="746.46124" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="746.46124" y="516.5509" id="tspan5984" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5990" x="801.12164" y="516.5509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="801.12164" y="516.5509" id="tspan5992" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text5998" x="579.04584" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="579.04584" y="533.83759" id="tspan6000" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6006" x="617.46832" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="617.46832" y="533.83759" id="tspan6008" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6014" x="657.40045" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="657.40045" y="533.83759" id="tspan6016" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6022" x="694.5437" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="694.5437" y="533.83759" id="tspan6024" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6030" x="732.96619" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="732.96619" y="533.83759" id="tspan6032" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6038" x="764.15125" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="764.15125" y="533.83759" id="tspan6040" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6046" x="807.06824" y="533.83759" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="807.06824" y="533.83759" id="tspan6048" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6054" x="549.60095" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="549.60095" y="551.12421" id="tspan6056" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6062" x="594.4425" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="594.4425" y="551.12421" id="tspan6064" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6070" x="667.4613" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="667.4613" y="551.12421" id="tspan6072" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6082" x="1052.4248" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1052.4248" y="364.42841" id="tspan6084" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6090" x="1088.2888" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1088.2888" y="364.42841" id="tspan6092" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6098" x="1129.915" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1129.915" y="364.42841" id="tspan6100" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6106" x="1165.1451" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1165.1451" y="364.42841" id="tspan6108" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6114" x="1183.7111" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1183.7111" y="364.42841" id="tspan6116" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6122" x="1221.4996" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1221.4996" y="364.42841" id="tspan6124" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6130" x="1233.6694" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1233.6694" y="364.42841" id="tspan6132" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6138" x="1258.3663" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1258.3663" y="364.42841" id="tspan6140" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6146" x="1274.3853" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1274.3853" y="364.42841" id="tspan6148" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6154" x="1326.2682" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1326.2682" y="364.42841" id="tspan6156" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6162" x="1384.5358" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1384.5358" y="364.42841" id="tspan6164" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6170" x="1424.6869" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1424.6869" y="364.42841" id="tspan6172" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6178" x="1451.3774" y="364.42841" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1451.3774" y="364.42841" id="tspan6180" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6186" x="1040.0339" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1040.0339" y="381.71509" id="tspan6188" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6194" x="1061.8152" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1061.8152" y="381.71509" id="tspan6196" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6202" x="1088.2291" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1088.2291" y="381.71509" id="tspan6204" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6210" x="1130.9271" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1130.9271" y="381.71509" id="tspan6212" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6218" x="1159.7382" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1159.7382" y="381.71509" id="tspan6220" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6226" x="1184.7231" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1184.7231" y="381.71509" id="tspan6228" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6234" x="1223.1687" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1223.1687" y="381.71509" id="tspan6236" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6242" x="1266.731" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1266.731" y="381.71509" id="tspan6244" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6250" x="1288.5121" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1288.5121" y="381.71509" id="tspan6252" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6258" x="1314.131" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1314.131" y="381.71509" id="tspan6260" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6266" x="1355.7572" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1355.7572" y="381.71509" id="tspan6268" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6274" x="1368.5724" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1368.5724" y="381.71509" id="tspan6276" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6282" x="1387.1498" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1387.1498" y="381.71509" id="tspan6284" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6290" x="1410.2101" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1410.2101" y="381.71509" id="tspan6292" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6298" x="1431.2076" y="381.71509" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1431.2076" y="381.71509" id="tspan6300" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6310" x="1052.4248" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1052.4248" y="409.37372" id="tspan6312" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6318" x="1108.4335" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1108.4335" y="409.37372" id="tspan6320" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6326" x="1148.792" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1148.792" y="409.37372" id="tspan6328" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6334" x="1171.8524" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1171.8524" y="409.37372" id="tspan6336" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6342" x="1223.7354" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1223.7354" y="409.37372" id="tspan6344" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6350" x="1270.49" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1270.49" y="409.37372" id="tspan6352" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6358" x="1298.0219" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1298.0219" y="409.37372" id="tspan6360" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6366" x="1339.6481" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1339.6481" y="409.37372" id="tspan6368" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6374" x="1376.0192" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1376.0192" y="409.37372" id="tspan6376" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6382" x="1431.7513" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1431.7513" y="409.37372" id="tspan6384" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6390" x="1460.5624" y="409.37372" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1460.5624" y="409.37372" id="tspan6392" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6398" x="1040.8983" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1040.8983" y="426.66034" id="tspan6400" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6406" x="1072.9362" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1072.9362" y="426.66034" id="tspan6408" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6414" x="1110.7249" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1110.7249" y="426.66034" id="tspan6416" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6422" x="1132.506" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1132.506" y="426.66034" id="tspan6424" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6430" x="1157.491" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1157.491" y="426.66034" id="tspan6432" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6438" x="1193.1591" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1193.1591" y="426.66034" id="tspan6440" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6446" x="1236.7214" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1236.7214" y="426.66034" id="tspan6448" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6454" x="1284.9857" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1284.9857" y="426.66034" id="tspan6456" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6466" x="1305.3955" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1305.3955" y="426.66034" id="tspan6468" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6474" x="1334.2296" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1334.2296" y="426.66034" id="tspan6476" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6482" x="1356.0109" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1356.0109" y="426.66034" id="tspan6484" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6490" x="1384.8448" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1384.8448" y="426.66034" id="tspan6492" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6498" x="1430.9657" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1430.9657" y="426.66034" id="tspan6500" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6506" x="1469.3997" y="426.66034" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1469.3997" y="426.66034" id="tspan6508" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6514" x="1052.8606" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1052.8606" y="443.94702" id="tspan6516" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6522" x="1094.4868" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1094.4868" y="443.94702" id="tspan6524" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6530" x="1123.1713" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1123.1713" y="443.94702" id="tspan6532" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6538" x="1180.609" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1180.609" y="443.94702" id="tspan6540" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6546" x="1210.6992" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1210.6992" y="443.94702" id="tspan6548" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6554" x="1236.9519" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1236.9519" y="443.94702" id="tspan6556" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6562" x="1258.733" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1258.733" y="443.94702" id="tspan6564" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6570" x="1271.5482" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1271.5482" y="443.94702" id="tspan6572" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6578" x="1290.1256" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1290.1256" y="443.94702" id="tspan6580" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6586" x="1333.6764" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1333.6764" y="443.94702" id="tspan6588" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6594" x="1368.1229" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1368.1229" y="443.94702" id="tspan6596" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6602" x="1387.9795" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1387.9795" y="443.94702" id="tspan6604" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6610" x="1403.1456" y="443.94702" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1403.1456" y="443.94702" id="tspan6612" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6622" x="1052.4248" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1052.4248" y="471.60565" id="tspan6624" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6630" x="1114.5529" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1114.5529" y="471.60565" id="tspan6632" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6638" x="1133.1302" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1133.1302" y="471.60565" id="tspan6640" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6646" x="1188.217" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1188.217" y="471.60565" id="tspan6648" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6658" x="1212.5682" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1212.5682" y="471.60565" id="tspan6660" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6666" x="1261.2474" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1261.2474" y="471.60565" id="tspan6668" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6674" x="1289.4247" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1289.4247" y="471.60565" id="tspan6676" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6682" x="1311.2058" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1311.2058" y="471.60565" id="tspan6684" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6690" x="1351.5529" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1351.5529" y="471.60565" id="tspan6692" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6698" x="1409.8319" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1409.8319" y="471.60565" id="tspan6700" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6706" x="1426.4846" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1426.4846" y="471.60565" id="tspan6708" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6710" x="1429.6849" y="471.60565" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1429.6849" y="471.60565" id="tspan6712" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6718" x="1039.6075" y="488.89227" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1039.6075" y="488.89227" id="tspan6720" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6726" x="1052.4227" y="488.89227" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1052.4227" y="488.89227" id="tspan6728" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6734" x="1087.5031" y="488.89227" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1087.5031" y="488.89227" id="tspan6736" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6742" x="1116.9711" y="488.89227" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1116.9711" y="488.89227" id="tspan6744" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6750" x="1037.1779" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1037.1779" y="511.36493" id="tspan6752" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6758" x="1073.6873" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1073.6873" y="511.36493" id="tspan6760" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6770" x="1122.3665" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1122.3665" y="511.36493" id="tspan6772" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6778" x="1183.2271" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1183.2271" y="511.36493" id="tspan6780" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6786" x="1211.4158" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1211.4158" y="511.36493" id="tspan6788" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6794" x="1226.7893" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1226.7893" y="511.36493" id="tspan6796" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6802" x="1263.9441" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1263.9441" y="511.36493" id="tspan6804" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6810" x="1292.7667" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1292.7667" y="511.36493" id="tspan6812" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6818" x="1304.2911" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1304.2911" y="511.36493" id="tspan6820" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6826" x="1345.9174" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1345.9174" y="511.36493" id="tspan6828" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6838" x="1384.9967" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1384.9967" y="511.36493" id="tspan6840" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6846" x="1429.6769" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1429.6769" y="511.36493" id="tspan6848" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6854" x="1442.4921" y="511.36493" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1442.4921" y="511.36493" id="tspan6856" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6862" x="1067.7848" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1067.7848" y="528.65155" id="tspan6864" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6870" x="1083.8037" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1083.8037" y="528.65155" id="tspan6872" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6878" x="1144.6643" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1144.6643" y="528.65155" id="tspan6880" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6886" x="1178.4078" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1178.4078" y="528.65155" id="tspan6888" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6894" x="1218.6165" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1218.6165" y="528.65155" id="tspan6896" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6902" x="1231.4316" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1231.4316" y="528.65155" id="tspan6904" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6910" x="1256.4166" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1256.4166" y="528.65155" id="tspan6912" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6918" x="1295.2885" y="528.65155" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1295.2885" y="528.65155" id="tspan6920" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6926" x="1013.8986" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1013.8986" y="551.12421" id="tspan6928" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6934" x="1036.9474" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1036.9474" y="551.12421" id="tspan6936" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6942" x="1092.9562" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1092.9562" y="551.12421" id="tspan6944" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6950" x="1133.3147" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1133.3147" y="551.12421" id="tspan6952" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6958" x="1185.8315" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1185.8315" y="551.12421" id="tspan6960" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6966" x="1213.3749" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1213.3749" y="551.12421" id="tspan6968" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6974" x="1235.1561" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1235.1561" y="551.12421" id="tspan6976" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6982" x="1278.7069" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1278.7069" y="551.12421" id="tspan6984" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6990" x="1319.054" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1319.054" y="551.12421" id="tspan6992" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text6998" x="1342.7482" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1342.7482" y="551.12421" id="tspan7000" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7006" x="1364.5293" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1364.5293" y="551.12421" id="tspan7008" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7014" x="1412.5631" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1412.5631" y="551.12421" id="tspan7016" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7022" x="1451.631" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1451.631" y="551.12421" id="tspan7024" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7030" x="1464.4462" y="551.12421" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1464.4462" y="551.12421" id="tspan7032" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7038" x="1056.2603" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1056.2603" y="568.41083" id="tspan7040" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7046" x="1078.0415" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1078.0415" y="568.41083" id="tspan7048" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7054" x="1136.1246" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1136.1246" y="568.41083" id="tspan7056" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7062" x="1173.2678" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1173.2678" y="568.41083" id="tspan7064" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7070" x="1211.0565" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1211.0565" y="568.41083" id="tspan7072" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7078" x="1232.8376" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1232.8376" y="568.41083" id="tspan7080" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7086" x="1257.8226" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1257.8226" y="568.41083" id="tspan7088" />
+    </text>
+    <text transform="scale(0.92195444,1.0846523)" id="text7094" x="1293.4907" y="568.41083" style="font-size:13.82931709px">
+      <tspan style="font-size:11.52443027px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="1293.4907" y="568.41083" id="tspan7096" />
+    </text>
+    <text id="text7114" x="965.00079" y="750.27814" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Optima;-inkscape-font-specification:Optima-Regular" x="965.00079" y="750.27814" id="tspan7116" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7550" x="2780.1689" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2780.1689" y="576.94574" id="tspan7552" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7558" x="2821.8687" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2821.8687" y="576.94574" id="tspan7560" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7566" x="2880.4377" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2880.4377" y="576.94574" id="tspan7568" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7574" x="2899.2615" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2899.2615" y="576.94574" id="tspan7576" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7582" x="2908.2178" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2908.2178" y="576.94574" id="tspan7584" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7590" x="2929.9189" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2929.9189" y="576.94574" id="tspan7592" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7598" x="2950.1213" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2950.1213" y="576.94574" id="tspan7600" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7602" x="2953.4502" y="576.94574" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2953.4502" y="576.94574" id="tspan7604" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7610" x="2802.1699" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2802.1699" y="597.80762" id="tspan7612" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7618" x="2833.5107" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2833.5107" y="597.80762" id="tspan7620" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7626" x="2845.4644" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2845.4644" y="597.80762" id="tspan7628" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7634" x="2902.5347" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2902.5347" y="597.80762" id="tspan7636" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7642" x="2922.7371" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2922.7371" y="597.80762" id="tspan7644" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7650" x="2973.0334" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2973.0334" y="597.80762" id="tspan7652" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7654" x="2976.3616" y="597.80762" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2976.3616" y="597.80762" id="tspan7656" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7662" x="2763.6833" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2763.6833" y="618.66949" id="tspan7664" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7670" x="2792.3865" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2792.3865" y="618.66949" id="tspan7672" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7678" x="2834.7095" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2834.7095" y="618.66949" id="tspan7680" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7686" x="2869.1558" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2869.1558" y="618.66949" id="tspan7688" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7694" x="2895.7366" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2895.7366" y="618.66949" id="tspan7696" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7702" x="2936.1775" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2936.1775" y="618.66949" id="tspan7704" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7710" x="2979.124" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2979.124" y="618.66949" id="tspan7712" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7714" x="2982.4509" y="618.66949" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2982.4509" y="618.66949" id="tspan7716" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7722" x="2763.4316" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2763.4316" y="639.53137" id="tspan7724" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7730" x="2790.7439" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2790.7439" y="639.53137" id="tspan7732" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7738" x="2803.9443" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2803.9443" y="639.53137" id="tspan7740" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7746" x="2815.1545" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2815.1545" y="639.53137" id="tspan7748" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7754" x="2859.4082" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2859.4082" y="639.53137" id="tspan7756" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7762" x="2877.4883" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2877.4883" y="639.53137" id="tspan7764" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7770" x="2916.5625" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2916.5625" y="639.53137" id="tspan7772" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7778" x="2953.7422" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2953.7422" y="639.53137" id="tspan7780" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7786" x="2991.1135" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2991.1135" y="639.53137" id="tspan7788" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7790" x="2994.4409" y="639.53137" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2994.4409" y="639.53137" id="tspan7792" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7798" x="2760.53" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2760.53" y="660.39325" id="tspan7800" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7806" x="2778.3706" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2778.3706" y="660.39325" id="tspan7808" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7814" x="2799.5801" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2799.5801" y="660.39325" id="tspan7816" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7822" x="2850.512" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2850.512" y="660.39325" id="tspan7824" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7830" x="2862.5854" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2862.5854" y="660.39325" id="tspan7832" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7838" x="2911.395" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2911.395" y="660.39325" id="tspan7840" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7846" x="2930.2185" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2930.2185" y="660.39325" id="tspan7848" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7854" x="2956.4038" y="660.39325" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2956.4038" y="660.39325" id="tspan7856" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7866" x="2614.7969" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2614.7969" y="241.60585" id="tspan7868" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7874" x="2650.9695" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2650.9695" y="241.60585" id="tspan7876" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7882" x="2671.1719" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2671.1719" y="241.60585" id="tspan7884" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7890" x="2711.0493" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2711.0493" y="241.60585" id="tspan7892" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7898" x="2728.8896" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2728.8896" y="241.60585" id="tspan7900" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7906" x="2760.95" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2760.95" y="241.60585" id="tspan7908" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7910" x="2764.2793" y="241.60585" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2764.2793" y="241.60585" id="tspan7912" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7918" x="2619.0173" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2619.0173" y="262.46771" id="tspan7920" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7926" x="2631.0908" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2631.0908" y="262.46771" id="tspan7928" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7934" x="2648.6675" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2648.6675" y="262.46771" id="tspan7936" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7942" x="2687.9814" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2687.9814" y="262.46771" id="tspan7944" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7950" x="2708.1838" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2708.1838" y="262.46771" id="tspan7952" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7958" x="2747.7493" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2747.7493" y="262.46771" id="tspan7960" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7966" x="2759.7029" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2759.7029" y="262.46771" id="tspan7968" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7970" x="2763.0322" y="262.46771" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2763.0322" y="262.46771" id="tspan7972" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7978" x="2588.4199" y="283.32956" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2588.4199" y="283.32956" id="tspan7980" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7986" x="2663.5586" y="283.32956" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2663.5586" y="283.32956" id="tspan7988" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text7994" x="2706.5051" y="283.32956" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2706.5051" y="283.32956" id="tspan7996" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text8002" x="2726.7078" y="283.32956" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2726.7078" y="283.32956" id="tspan8004" />
+    </text>
+    <text transform="scale(0.95916629,1.0425721)" id="text8010" x="2773.6948" y="283.32956" style="font-size:14.38749504px">
+      <tspan style="font-size:11.9895792px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2773.6948 2777.0278" y="283.32956" ns2:role="line" id="tspan8012" />
+    </text>
+    <text id="text8170" x="2337.5574" y="364.40375" style="font-size:15px">
+      <tspan style="font-size:16.25px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2337.5574" y="364.40375" id="tspan8172" />
+    </text>
+    <text id="text8178" x="2534.2905" y="364.40375" style="font-size:15px">
+      <tspan style="font-size:18.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2534.2905" y="364.40375" id="tspan8180" />
+    </text>
+    <text id="text8186" x="2569.1655" y="364.40375" style="font-size:15px">
+      <tspan style="font-size:18.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2569.1655" y="364.40375" id="tspan8188" />
+    </text>
+    <text id="text8194" x="2337.5574" y="381.90375" style="font-size:15px">
+      <tspan style="font-size:18.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2337.5574" y="381.90375" id="tspan8196" />
+    </text>
+    <text id="text8202" x="2565.8037" y="381.90375" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2565.8037" y="381.90375" id="tspan8204" />
+    </text>
+    <text id="text8210" x="2617.5588" y="381.90375" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2617.5588" y="381.90375" id="tspan8212" />
+    </text>
+    <text id="text8218" x="2565.0649" y="395.65375" style="font-size:15px">
+      <tspan style="font-size:13.75px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Gill Sans Std;-inkscape-font-specification:GillSansStd-Italic" x="2565.0649" y="395.65375" id="tspan8220" />
+    </text>
+    <g id="g4498">
+      <g transform="matrix(1.0789088,0,0,1.0789088,-31.804978,168.56112)" id="g13410">
+        <path id="path7951" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 368.8,395.94818 c 0.29041,-3.48687 0.25407,-4.74134 0,-8.27327 -0.14317,-1.99022 -2.39597,-3.70125 -4.9,-3.70125 -2.46755,0 -4.75297,1.71186 -4.9,3.70125 -0.25705,3.47809 -0.22553,4.82808 0,8.27327 0.13101,2.00132 2.40064,3.48298 4.9,3.48298 2.49936,0 4.73938,-1.55449 4.9,-3.48298 z m -2.8,-7.386 c 0.14592,1.67019 0.14592,4.70902 0,6.3 -0.14626,1.59471 -0.50305,2.39273 -2.1,2.39273 -1.59695,0 -1.93938,-0.79401 -2.10014,-2.39273 -0.16076,-1.59872 -0.15763,-4.66984 0,-6.3 0.15763,-1.63016 0.49554,-2.62852 2.10014,-2.62852 1.6046,0 1.95408,0.95833 2.1,2.62852 z" ns2:nodetypes="cszsszsczzzzzz" />
+        <path ns2:nodetypes="cscsscssccszcssccccc" d="m 341.73843,368.83112 c 0,1.08875 -0.62237,2.51504 -2.36487,2.51504 -1.74125,0 -1.74125,-1.95875 -1.5225,-3.48375 0.2175,-1.30625 1.74125,-1.74125 3.7,-1.74125 0.2294,0 0.21875,0.21625 0.21875,0.6525 m 2.83,0 c 0,-1.30625 0,-2.83 0,-4.13625 0,-2.83125 -1.52375,-4.5725 -4.5725,-4.5725 -3.48375,0 -5.0075,1.74125 -4.78875,4.5725 l 2.83,0 c 0.2175,-1.30625 0,-2.6125 1.74125,-2.6125 1.74125,0 1.84637,1.4579 1.95574,2.6554 0.10938,1.1975 -0.21449,1.26335 -0.21449,1.26335 0,0 -2.39375,0.2175 -3.91875,0.6525 -1.52375,0.43625 -2.83,1.525 -2.83,4.355 0,2.1775 0.43625,4.5725 3.48375,4.79 1.74125,0 2.83,-1.08875 3.265,-1.52375 0,0 0.21875,0 0.43625,1.08875 l 2.83,0 c 0,0 -0.2175,-2.83125 -0.2175,-5.66125" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path8030" />
+        <path id="path8032" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 380.92848,368.83112 c 0,1.08875 -0.62237,2.51504 -2.36487,2.51504 -1.74125,0 -1.74125,-1.95875 -1.5225,-3.48375 0.2175,-1.30625 1.74125,-1.74125 3.7,-1.74125 0.2294,0 0.21875,0.21625 0.21875,0.6525 m 2.83,0 c 0,-1.30625 0,-2.83 0,-4.13625 0,-2.83125 -1.52375,-4.5725 -4.5725,-4.5725 -3.48375,0 -5.0075,1.74125 -4.78875,4.5725 l 2.83,0 c 0.2175,-1.30625 0,-2.6125 1.74125,-2.6125 1.74125,0 1.84637,1.4579 1.95574,2.6554 0.10938,1.1975 -0.21449,1.26335 -0.21449,1.26335 0,0 -2.39375,0.2175 -3.91875,0.6525 -1.52375,0.43625 -2.83,1.525 -2.83,4.355 0,2.1775 0.43625,4.5725 3.48375,4.79 1.74125,0 2.83,-1.08875 3.265,-1.52375 0,0 0.21875,0 0.43625,1.08875 l 2.83,0 c 0,0 -0.2175,-2.83125 -0.2175,-5.66125" ns2:nodetypes="cscsscssccszcssccccc" />
+        <path ns2:nodetypes="cscsscssccszcssccccc" d="m 342.60973,394.52174 c 0,1.08875 -0.62237,2.51504 -2.36487,2.51504 -1.74125,0 -1.74125,-1.95875 -1.5225,-3.48375 0.2175,-1.30625 1.74125,-1.74125 3.7,-1.74125 0.2294,0 0.21875,0.21625 0.21875,0.6525 m 2.83,0 c 0,-1.30625 0,-2.83 0,-4.13625 0,-2.83125 -1.52375,-4.5725 -4.5725,-4.5725 -3.48375,0 -5.0075,1.74125 -4.78875,4.5725 l 2.83,0 c 0.2175,-1.30625 0,-2.6125 1.74125,-2.6125 1.74125,0 1.84637,1.4579 1.95574,2.6554 0.10938,1.1975 -0.21449,1.26335 -0.21449,1.26335 0,0 -2.39375,0.2175 -3.91875,0.6525 -1.52375,0.43625 -2.83,1.525 -2.83,4.355 0,2.1775 0.43625,4.5725 3.48375,4.79 1.74125,0 2.83,-1.08875 3.265,-1.52375 0,0 0.21875,0 0.43625,1.08875 l 2.83,0 c 0,0 -0.2175,-2.83125 -0.2175,-5.66125" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path8035" />
+        <path id="path8037" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 388.33098,394.52174 c 0,1.08875 -0.62237,2.51504 -2.36487,2.51504 -1.74125,0 -1.74125,-1.95875 -1.5225,-3.48375 0.2175,-1.30625 1.74125,-1.74125 3.7,-1.74125 0.2294,0 0.21875,0.21625 0.21875,0.6525 m 2.83,0 c 0,-1.30625 0,-2.83 0,-4.13625 0,-2.83125 -1.52375,-4.5725 -4.5725,-4.5725 -3.48375,0 -5.0075,1.74125 -4.78875,4.5725 l 2.83,0 c 0.2175,-1.30625 0,-2.6125 1.74125,-2.6125 1.74125,0 1.84637,1.4579 1.95574,2.6554 0.10938,1.1975 -0.21449,1.26335 -0.21449,1.26335 0,0 -2.39375,0.2175 -3.91875,0.6525 -1.52375,0.43625 -2.83,1.525 -2.83,4.355 0,2.1775 0.43625,4.5725 3.48375,4.79 1.74125,0 2.83,-1.08875 3.265,-1.52375 0,0 0.21875,0 0.43625,1.08875 l 2.83,0 c 0,0 -0.2175,-2.83125 -0.2175,-5.66125" ns2:nodetypes="cscsscssccszcssccccc" />
+        <path ns2:nodetypes="cscsscssccszcssccccc" d="m 377.87973,420.21362 c 0,1.08875 -0.62237,2.51504 -2.36487,2.51504 -1.74125,0 -1.74125,-1.95875 -1.5225,-3.48375 0.2175,-1.30625 1.74125,-1.74125 3.7,-1.74125 0.2294,0 0.21875,0.21625 0.21875,0.6525 m 2.83,0 c 0,-1.30625 0,-2.83 0,-4.13625 0,-2.83125 -1.52375,-4.5725 -4.5725,-4.5725 -3.48375,0 -5.0075,1.74125 -4.78875,4.5725 l 2.83,0 c 0.2175,-1.30625 0,-2.6125 1.74125,-2.6125 1.74125,0 1.84637,1.4579 1.95574,2.6554 0.10938,1.1975 -0.21449,1.26335 -0.21449,1.26335 0,0 -2.39375,0.2175 -3.91875,0.6525 -1.52375,0.43625 -2.83,1.525 -2.83,4.355 0,2.1775 0.43625,4.5725 3.48375,4.79 1.74125,0 2.83,-1.08875 3.265,-1.52375 0,0 0.21875,0 0.43625,1.08875 l 2.83,0 c 0,0 -0.2175,-2.83125 -0.2175,-5.66125" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path8039" />
+        <path id="path7931" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 336.73098,420.21362 c 0,1.08875 -0.62237,2.51504 -2.36487,2.51504 -1.74125,0 -1.74125,-1.95875 -1.5225,-3.48375 0.2175,-1.30625 1.74125,-1.74125 3.7,-1.74125 0.2294,0 0.21875,0.21625 0.21875,0.6525 m 2.83,0 c 0,-1.30625 0,-2.83 0,-4.13625 0,-2.83125 -1.52375,-4.5725 -4.5725,-4.5725 -3.48375,0 -5.0075,1.74125 -4.78875,4.5725 l 2.83,0 c 0.2175,-1.30625 0,-2.6125 1.74125,-2.6125 1.74125,0 1.84637,1.4579 1.95574,2.6554 0.10938,1.1975 -0.21449,1.26335 -0.21449,1.26335 0,0 -2.39375,0.2175 -3.91875,0.6525 -1.52375,0.43625 -2.83,1.525 -2.83,4.355 0,2.1775 0.43625,4.5725 3.48375,4.79 1.74125,0 2.83,-1.08875 3.265,-1.52375 0,0 0.21875,0 0.43625,1.08875 l 2.83,0 c 0,0 -0.2175,-2.83125 -0.2175,-5.66125" ns2:nodetypes="cscsscssccszcssccccc" />
+        <path id="path7929" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 369.85486,373.30616 3.04785,0 0,-15.02387 -3.04785,0 0,15.02387 z" />
+        <path id="path7935" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 349.17236,358.28241 -3.04875,0 c 0,0 0.21875,1.3075 0.21875,3.70125 0,2.1775 0,11.3225 0,11.3225 l 3.0475,0 c 0,0 0,-10.01625 0,-11.10375 0,-1.09 0.435,-2.1775 1.95875,-2.1775 1.3075,0 1.7425,1.0875 1.7425,2.1775 0,0.87 0,11.10375 0,11.10375 l 3.265,0 c 0,0 0,-9.3625 0,-10.88625 0,-3.26625 -1.52375,-4.355 -3.91875,-4.355 -1.96,0 -2.395,0.65375 -3.0475,1.08875 0,0 0,0 -0.2175,-0.87125" />
+        <path id="path7937" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 367.89611,365.46741 c 0,0.87 0,1.74125 0,2.1775 0,3.0475 0.2175,5.66125 0.2175,5.66125 l -3.04875,0 c 0,-0.87125 -0.21625,-1.3075 -0.21625,-1.3075 -0.65375,0.65375 -1.30625,1.525 -2.83125,1.525 -3.91875,0 -3.91875,-3.48375 -4.1375,-4.79 0,-1.08875 0,-5.66125 0,-7.185 0.21875,-0.87125 0.8725,-3.48375 3.92,-3.48375 2.1775,0 2.6125,0.87125 3.04875,1.08875 l 0,-6.53125 3.0475,0 c 0,1.74125 0,8.92625 0,12.845 m -3.0475,0 c 0,-1.08875 0,-1.96 0,-3.265 0,-2.1775 -1.96125,-2.1775 -1.96125,-2.1775 -1.74,0 -2.17625,1.30625 -2.17625,5.4425 0,3.26625 0,5.87875 2.17625,5.87875 2.1775,0 1.96125,-2.1775 1.96125,-3.70125 0,-0.87125 0,-1.74125 0,-2.1775" ns2:nodetypes="cscccsccscccccscsssc" />
+        <path id="path7939" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 333.71361,358.28241 c 0,-1.96 0,-6.31375 -5.66,-6.31375 -5.87875,0 -5.87875,4.35375 -5.87875,5.44375 0,1.30625 -0.21875,3.7 3.4825,5.66 1.3075,0.87125 2.6125,1.52375 3.04875,1.7425 0.2175,0.2175 2.1775,0.87125 2.1775,3.4825 0,2.83125 -2.395,3.04875 -2.83,3.04875 -1.3075,0 -2.61375,-0.43625 -3.04875,-2.6125 0,-0.43625 0,-0.87125 0,-1.96 l -3.4825,0 c 0,0 0,3.70125 1.5225,5.225 1.525,1.525 3.04875,1.7425 4.79125,1.7425 1.74125,0 3.7,-0.435 4.78875,-1.52375 1.08875,-1.3075 1.52375,-2.395 1.52375,-4.13625 0,-1.96 -0.435,-3.92 -3.4825,-5.87875 -1.08875,-0.65375 -2.1775,-1.09 -3.26625,-1.7425 -1.30625,-0.65375 -2.1775,-1.74125 -2.1775,-3.265 0,-1.525 1.08875,-2.61375 2.61375,-2.61375 1.74125,0 2.61125,0.87125 2.61125,2.61375 0,0.2175 0,1.0875 0,1.0875 l 3.26625,0" />
+        <path id="path7941" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 369.85486,355.66991 3.04785,0 0,-3.04834 -3.04785,0 0,3.04834 z" />
+        <path id="path7953" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 326.52861,378.31366 -5.00625,0 0,20.90125 3.0475,0 0,-16.765 4.57125,16.765 5.0075,0 0,-20.90125 -3.0475,0 0,16.32875 -4.5725,-16.32875" />
+        <path id="path7955" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 350.91361,386.14991 2.1775,0 0,-2.17625 -2.1775,0 c 0,-2.1775 0,-3.91875 0,-3.91875 l -3.0475,1.30625 c 0,0 0,1.08875 0,2.6125 l -1.7425,0 0,2.17625 1.7425,0 c 0,3.92 0,9.145 0,9.79875 0,1.30625 0,3.26625 3.4825,3.26625 0.43625,0 1.7425,0 1.7425,0 l 0,-2.1775 c 0,0 -0.8725,0 -1.30625,0 -0.43625,0 -0.87125,-0.2175 -0.87125,-1.7425 0,-0.6525 0,-5.225 0,-9.145" />
+        <path id="path7957" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 354.17986,399.21491 3.04785,0 0,-15.24075 -3.04785,0 0,15.24075 z" />
+        <path id="path7959" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 354.17986,381.36116 3.04785,0 0,-3.04736 -3.04785,0 0,3.04736 z" />
+        <path id="path7961" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 373.33986,383.97366 -3.05,0 c 0,0 0.21875,1.30625 0.21875,3.70125 0,2.17875 0,11.54 0,11.54 l 3.0475,0 c 0,0 0,-10.23375 0,-11.32125 0,-1.08875 0.43625,-2.1775 1.7425,-2.1775 1.52375,0 1.96,1.08875 1.96,2.1775 0,0.87 0,11.32125 0,11.32125 l 3.0475,0 c 0,0 0,-9.58 0,-11.105 0,-3.265 -1.52375,-4.35375 -3.91875,-4.35375 -1.96,0 -2.395,0.65375 -3.0475,1.08875 0,0 0,0 0,-0.87125" />
+        <path id="path7963" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 393.36986,399.21491 3.04785,0 0,-20.90137 -3.04785,0 0,20.90137 z" />
+        <path id="path7977" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 410.56986,409.66491 -2.83125,0 0,15.24125 3.04875,0 -0.2175,-15.24125" />
+        <path id="path7979" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 321.52236,424.90616 7.40125,0 0,-2.61375 -4.13625,0 0,-18.07 -3.265,0 0,20.68375" />
+        <path id="path7981" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 351.34861,413.14866 c 0.35023,3.64022 0.30557,4.75643 0,7.4025 -0.21625,1.30625 -0.21625,4.5725 -4.13625,4.5725 -1.30625,0 -2.17625,-0.87125 -2.83,-1.525 0,0 -0.2175,0.4375 -0.2175,1.3075 l -3.04875,0 c 0,0 0.2175,-1.3075 0.2175,-3.70125 l 0,-16.9825 3.04875,0 0,6.53125 c 0.65375,-0.2175 1.08875,-1.08875 3.0475,-1.08875 3.0475,0 3.7025,2.6125 3.91875,3.48375 z m -4.79,9.7975 c 2.17625,0 1.96,-3.04875 1.96,-3.70125 0,-0.6525 0,-1.30625 0,-2.1775 0,-4.13625 -0.2175,-5.44375 -1.96,-5.44375 -0.21625,0 -2.17625,0 -2.17625,2.17875 l 0,5.87875 c 0,0.87 0,3.265 2.17625,3.265 z" ns2:nodetypes="ccscccccccscccssccs" />
+        <path id="path7983" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 370.72611,409.66491 c -2.6125,-0.2175 -2.83,1.95875 -3.26625,1.95875 0,0 0,-1.305 -0.2175,-1.95875 l -2.83,0 c 0,0 0.2175,1.3075 0.2175,3.48375 0,2.395 0,11.7575 0,11.7575 l 3.04875,0 c 0,0 0,-8.9275 0,-10.015 0,-1.08875 0.435,-2.61375 2.83,-2.83125 l 0.2175,-2.395" />
+        <path id="path7985" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 386.18486,411.84241 2.1775,0 0,-2.1775 -2.1775,0 c 0,-2.17625 0,-3.91875 0,-3.91875 l -2.83,1.30625 c 0,0 0,1.08875 0,2.6125 l -1.96,0 0,2.1775 1.96,0 c 0,4.13625 0,9.145 0,9.7975 0,1.30625 0,3.26625 3.265,3.26625 0.43625,0 1.96,0 1.96,0 l 0,-2.1775 c 0,0 -1.08875,0 -1.3075,0 -0.6525,0 -1.0875,0 -1.0875,-1.52375 0,-0.87125 0,-5.4425 0,-9.3625" />
+        <path id="path7987" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 406.64986,409.66491 c -2.17625,0 -2.61125,1.95875 -2.83,1.95875 0,0 -0.2175,-1.305 -0.2175,-1.95875 l -3.0475,0 c 0,0 0.21625,1.3075 0.21625,3.48375 0,2.395 0,11.7575 0,11.7575 l 3.2675,0 c 0,0 0,-8.9275 0,-10.015 0,-1.08875 0.435,-2.61375 2.61125,-2.83125 l 0,-2.395" />
+        <path id="path7989" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 407.73861,407.27116 2.83056,0 0,-3.04785 -2.83056,0 0,3.04785 z" />
+        <path id="path7991" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 421.89111,418.15616 c -0.0137,-2.20369 0,-3.91875 0,-4.78875 -0.435,-2.83125 -2.395,-3.7025 -5.0075,-3.7025 -2.395,0 -4.355,0.87125 -4.79,3.7025 -0.2175,1.52375 0,6.31375 0.2175,8.055 0.2175,1.96 1.7425,3.70125 4.5725,3.70125 3.0475,0 4.22548,-1.63346 4.79,-3.53609 0.28066,-0.94593 0.2175,-1.30613 0.2175,-1.47141 -0.75602,0 -3.04875,0 -3.04875,0 0,1.08875 0,0.2175 0,0.6525 0,1.3075 -0.435,2.1775 -1.95875,2.1775 -1.52375,0 -1.7425,-1.08875 -1.7425,-2.6125 0,-0.6525 0,-1.525 0,-2.1775 m -0.2175,-2.1775 c 0,-0.435 0,-1.0875 0,-1.74125 0.2175,-2.395 1.08875,-2.61375 1.96,-2.61375 1.30625,0 1.95875,0.65375 1.95875,2.83125 0,0.43625 0,1.3075 0,1.52375" ns2:nodetypes="ccsccssccssscccssc" />
+        <path id="path7993" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 432.12361,414.23741 c 0,-1.7425 0.21875,-4.5725 -4.355,-4.5725 -3.9175,0 -4.78875,2.395 -4.78875,3.7025 0,1.0875 0,1.74125 1.74125,3.265 0.65375,0.87 2.6125,1.96 3.48375,2.6125 0.21875,0.2175 1.30625,0.87125 1.30625,2.1775 0,1.52375 -1.52375,1.52375 -1.7425,1.52375 -1.0875,0 -1.74125,-0.435 -1.95875,-1.52375 0,-0.435 0,-0.87125 0,-1.30625 l -3.04875,0 c 0,0 -0.21625,1.96 0.65375,3.26625 0.87125,1.30625 2.83125,1.74125 4.35375,1.74125 1.3075,0 2.61375,-0.2175 3.48375,-1.0875 0.87125,-0.8725 1.09,-1.525 1.09,-3.04875 0,-1.30625 -0.21875,-2.17875 -1.96,-3.7025 -0.6525,-0.435 -1.95875,-1.5225 -2.83125,-1.95875 -0.87,-0.435 -1.52375,-1.08875 -1.52375,-2.1775 0,-1.08875 0.65375,-1.525 1.74125,-1.525 1.09,0 1.3075,0.87125 1.3075,1.96 0,0.21875 0.2175,0.65375 0.2175,0.65375 l 2.83,0" />
+        <path ns2:nodetypes="cszsszsczzzzzz" d="m 362.90496,421.64005 c 0.29041,-3.48687 0.25407,-4.74134 0,-8.27327 -0.14317,-1.99022 -2.39597,-3.70125 -4.9,-3.70125 -2.46755,0 -4.75297,1.71186 -4.9,3.70125 -0.25705,3.47809 -0.22553,4.82808 0,8.27327 0.13101,2.00132 2.40064,3.48298 4.9,3.48298 2.49936,0 4.73938,-1.55449 4.9,-3.48298 z m -2.8,-7.386 c 0.14592,1.67019 0.14592,4.70902 0,6.3 -0.14626,1.59471 -0.50305,2.39273 -2.1,2.39273 -1.59695,0 -1.93938,-0.79401 -2.10014,-2.39273 -0.16076,-1.59872 -0.15763,-4.66984 0,-6.3 0.15763,-1.63016 0.49554,-2.62852 2.10014,-2.62852 1.6046,0 1.95408,0.95833 2.1,2.62852 z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path13406" />
+        <path id="path13408" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="m 399.26417,421.64005 c 0.29041,-3.48687 0.25407,-4.74134 0,-8.27327 -0.14317,-1.99022 -2.39597,-3.70125 -4.9,-3.70125 -2.46755,0 -4.75297,1.71186 -4.9,3.70125 -0.25705,3.47809 -0.22553,4.82808 0,8.27327 0.13101,2.00132 2.40064,3.48298 4.9,3.48298 2.49936,0 4.73938,-1.55449 4.9,-3.48298 z m -2.8,-7.386 c 0.14592,1.67019 0.14592,4.70902 0,6.3 -0.14626,1.59471 -0.50305,2.39273 -2.1,2.39273 -1.59695,0 -1.93938,-0.79401 -2.10014,-2.39273 -0.16076,-1.59872 -0.15763,-4.66984 0,-6.3 0.15763,-1.63016 0.49554,-2.62852 2.10014,-2.62852 1.6046,0 1.95408,0.95833 2.1,2.62852 z" ns2:nodetypes="cszsszsczzzzzz" />
+      </g>
+      <g id="g4492">
+        <g style="fill:none;stroke:#00adef;stroke-width:191.99992371;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" id="g7876" transform="matrix(0.04529875,0,0,-0.04527072,192.70903,656.33787)">
+          <path d="m 957.154,2328.18 c 0,0 343.7487,24.0054 515.623,24.0054 171.8743,0 515.623,-24.0054 515.623,-24.0054 170.43,0 308.61,-138.17 308.61,-308.61 0,0 23.9957,-343.7473 23.9957,-515.621 0,-171.8737 -23.9957,-515.621 -23.9957,-515.621 0,-170.435 -138.18,-308.607 -308.61,-308.607 0,0 -343.7487,-24.0039 -515.623,-24.0039 -171.8743,0 -515.623,24.0039 -515.623,24.0039 -170.44,0 -308.612,138.172 -308.612,308.607 0,0 -23.99441,343.7473 -23.99441,515.621 0,171.8737 23.99441,515.621 23.99441,515.621 0,170.44 138.172,308.61 308.612,308.61 z" style="fill:none;stroke:#00adef;stroke-width:191.99992371;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" id="path7878" ns2:nodetypes="czcczcczcczcc" />
+        </g>
+        <g transform="matrix(0.04529875,0,0,-0.04527072,192.70906,656.33784)" id="g6515" style="fill:#00adef;fill-opacity:1;stroke:none;stroke-opacity:1">
+          <path id="path6517" style="fill:#00adef;fill-opacity:1;stroke:none;stroke-opacity:1" d="m 1166.46,1983.68 133.42,0 -4.12,-132.58 -400.118,0 0,-772.24 166.268,-8.72 0,266.77 80.56,-4.23 0,240.76 144.64,0 -21.25,-683.298 413.84,0 -21.26,683.298 144.65,0 0,-240.76 80.56,4.23 0,-266.77 166.26,8.72 0,772.24 -400.12,0 -8.56,275.1 -474.77,0 0,-142.52 z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
