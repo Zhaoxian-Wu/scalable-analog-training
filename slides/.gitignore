@@ -1,0 +1,14 @@
+# Slidev dependencies and generated output
+/node_modules/
+/dist/
+/.slidev/
+# Generated preview HTML contains an absolute local development path
+/index.html
+
+# Exported presentations and package-manager logs
+*.pdf
+*.pptx
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

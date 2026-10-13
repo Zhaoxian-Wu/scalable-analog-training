@@ -1,0 +1,27 @@
+# Local experiment and checkpoint inventories
+/checkpoint-inventory.tsv
+/wandb-cloud-runs.tsv
+/list.md
+
+# Dependencies, build outputs, and caches
+node_modules/
+dist/
+.slidev/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Local environment files; keep shareable examples
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

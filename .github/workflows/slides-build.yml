@@ -1,0 +1,33 @@
+name: Build slides
+
+on:
+  push:
+    branches: [slides]
+  pull_request:
+    paths:
+      - 'slides/**'
+      - '.github/workflows/slides-build.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: slides/package-lock.json
+
+      - name: Install dependencies
+        working-directory: slides
+        run: npm ci
+
+      - name: Build slides
+        working-directory: slides
+        run: npm run build -- --base /scalable-analog-training/slides/

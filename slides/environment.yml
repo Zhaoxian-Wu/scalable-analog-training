@@ -1,0 +1,6 @@
+name: analog-slides
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - nodejs>=22.12,<23
