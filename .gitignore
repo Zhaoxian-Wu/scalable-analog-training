@@ -1,0 +1,46 @@
+# Local experiment and checkpoint inventories
+/checkpoint-inventory.tsv
+/wandb-cloud-runs.tsv
+/list.md
+
+# Dependencies, build outputs, and caches
+node_modules/
+dist/
+.slidev/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Local environment files; keep shareable examples
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Training artifacts and local dependency/build environments
+.venv/
+.deps/
+outputs/
+checkpoints/
+runs/
+wandb/
+_skbuild/
+*.egg-info/
+*.whl
+*.orig
+transformer/data/**/*.bin
+transformer/data/**/meta.pkl
+transformer/data/**/input.txt
+
+# Sources maintained on dedicated branches
+/slides/
+/website/

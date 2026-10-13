@@ -1,0 +1,23 @@
+{
+  "aihwkit": {
+    "repository": "https://github.com/Zhaoxian-Wu/aihwkit.git",
+    "ref": "beta-release",
+    "commit": null,
+    "composition_list": "dependencies/aihwkit-beta-branches.yaml",
+    "base_repository": "https://github.com/IBM/aihwkit.git",
+    "base_ref": "master",
+    "observed_base_commit": "b5aeea78859a4a028975519e154088d3ae0efeaf",
+    "observed_branch_commits": {
+      "feat/incremental-analog-grad": "2e19fae1f1eaedd7fbc2afacb3e71032b8a19763",
+      "fix/cuda-large-mbatch-int64": "f69e9074e15f1a6e1defc2216c5875c04a3c6e16",
+      "feat/backward-BM": "b09045a25b88ac6b71c5bf79adfcf99d3d76f5b5",
+      "feat/dw-min-zero-infinite-granularity": "08eec90eb4e200fdb79b5a9e884b3789d9f0deca",
+      "perf/parallel-device-initialization": "d345a9f642ef27fd829cc2bf146b36d52f36d850"
+    }
+  },
+  "MixedPrecisionOptim": {
+    "repository": "https://github.com/Zhaoxian-Wu/MixedPrecisionOptim.git",
+    "ref": "test-v3",
+    "commit": "c7c01a856a4c6283e3681a95df611ec35b127005"
+  }
+}
