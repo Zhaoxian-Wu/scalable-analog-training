@@ -1,0 +1,19 @@
+{
+  "name": "scalable-analog-training-homepage",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:interactives": "node build-interactives.mjs"
+  },
+  "dependencies": {
+    "vue": "3.5.43",
+    "katex": "0.16.47"
+  },
+  "devDependencies": {
+    "vite": "7.3.7",
+    "@vitejs/plugin-vue": "6.0.9"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
