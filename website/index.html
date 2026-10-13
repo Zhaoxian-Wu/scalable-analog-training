@@ -14,12 +14,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="assets/interactive/diagrams.css?v=682562ea857d">
+  <link rel="stylesheet" href="assets/interactive/diagrams.css?v=512402f7c8f2">
   <link rel="stylesheet" href="interactives.css">
   <script src="app.js" defer></script>
   <script src="assets/training-scale-data.js" defer></script>
   <script src="training-scale.js" defer></script>
-  <script src="assets/interactive/diagrams.js?v=fa819f5eea23" defer></script>
+  <script src="assets/interactive/diagrams.js?v=b0eaa2d5fd11" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,6 +50,7 @@
           <a href="#results">Scaling results</a>
           <a href="#research-call">Future Work</a>
           <a href="#resources">Resources</a>
+          <a href="#bibtex">BibTeX</a>
         </nav>
         <div class="toc-note">Analog matrix passes.<br>Digital gradient handling.</div>
       </div>
@@ -71,6 +72,7 @@
         <div class="project-links">
           <a class="project-button" href="https://arxiv.org/abs/2609.36584" rel="noreferrer"><span class="button-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg></span><span class="button-label">arXiv</span></a>
           <a class="project-button" href="https://github.com/Zhaoxian-Wu/scalable-analog-training" rel="noreferrer"><span class="button-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="5" r="2"/><path d="M7 7v10M17 7v3a4 4 0 0 1-4 4H7"/></svg></span><span class="button-label">Code</span></a>
+          <a class="project-button" href="#bibtex"><span class="button-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 7H5v6h5v4H7M20 7h-5v6h5v4h-3"/></svg></span><span class="button-label">BibTeX</span></a>
           <a class="project-button secondary" href="#results"><span class="button-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3v17h17M8 16v-5M13 16V7M18 16V4"/></svg></span><span class="button-label">View results</span></a>
         </div>
       </section>
@@ -134,7 +136,7 @@
             <div id="mp-architecture-demo"><p>The analog MP baseline executes forward and backward matrix passes in a DAC–crossbar–ADC path, while digital circuitry accumulates gradients and residual updates. This work adds logical-space optimization, width-aware mapping, and converter alignment.</p></div>
           </div>
           <div class="architecture-demo">
-            <div class="demo-head"><h3>One training step, two domains</h3><span class="schematic-label">Training dataflow</span></div>
+            <div class="demo-head"><h3>One training step, two domains</h3></div>
             <div class="domain-legend"><span><i class="analog-key"></i>Analog crossbar</span><span><i class="digital-key"></i>Digital circuitry</span></div>
             <ol class="step-selector" aria-label="Explore the training step">
               <li><button type="button" class="step-button selected" aria-pressed="true" data-step="0"><span class="step-number">01</span><strong>Forward</strong><span>Matrix pass</span></button></li>
@@ -177,17 +179,18 @@
         <section id="codesign">
           <h2>Three parts of the co-design</h2>
           <p>Digital accumulation is the starting point. Scaling also requires the logical model, the physical array, and the converters to operate in compatible numerical ranges.</p>
-          <div class="design-part" id="mapping"><span class="part-number">01</span><div><h3>Weight mapping</h3><p>Logical initialization should shrink with layer width, while physical conductance deviations should occupy a fixed fraction of the device range. A width-aware scale reconciles these two requirements.</p><div class="mapping-targets"><div class="mapping-target"><span>Logical weights</span><div data-math="\operatorname{Std}(W)\propto D^{-1/2}">Std(W) ∝ D<sup>−1/2</sup></div></div><div class="mapping-target"><span>Physical deviations</span><div data-math="\operatorname{Std}(\widehat W-\widehat W^\diamond)=\tau/\omega">Std(Ŵ − Ŵ⋄) = τ/ω</div></div></div><p>To satisfy both, we design \(s\propto D^{-1/2}\):</p><div class="design-formula" data-math="\begin{aligned}W &amp;= s(\widehat W-\widehat W^\diamond),\quad s &amp;= \frac{\omega\sigma_w}{\tau}\propto D^{-1/2}\end{aligned}">W = s(Ŵ − Ŵ⋄), s = ωσw / τ ∝ D<sup>−1/2</sup></div><p class="formula-key">\(W\) is the logical weight; \(\widehat W\) is the physical conductance and \(\widehat W^\diamond\) its reference. The targets above are standard deviations: logical variance scales as \(D^{-1}\), while the physical pre-clipping target \(\tau/\omega\) is independent of width.</p></div></div>
+          <div class="design-part" id="mapping"><span class="part-number">01</span><div><h3>Weight mapping</h3><p>Logical initialization should shrink with layer width, while the physical weight distribution should be centered on the device’s symmetric point and occupy a fixed fraction of its conductance range. A width-aware scale reconciles these requirements.</p><div class="mapping-targets"><div class="mapping-target"><span>Logical weights</span><div data-math="\operatorname{Std}(W)\propto D^{-1/2}">Std(W) ∝ D<sup>−1/2</sup></div></div><div class="mapping-target"><span>Physical deviations</span><div data-math="\operatorname{Std}(\widehat W-\widehat W^\diamond)=\tau/\omega">Std(Ŵ − Ŵ⋄) = τ/ω</div></div></div><p>To satisfy both, we design \(s\propto D^{-1/2}\):</p><div class="design-formula" data-math="\begin{aligned}W = s(\widehat W-\widehat W^\diamond),\quad s = \frac{\omega D^{-1/2}}{\tau}\propto D^{-1/2}\end{aligned}">W = s(Ŵ − Ŵ⋄), s = ωD<sup>−1/2</sup> / τ ∝ D<sup>−1/2</sup></div><p class="formula-key">\(W\) is the logical weight; \(\widehat W\) is the physical conductance and \(\widehat W^\diamond\) its device-specific symmetric point, where potentiation and depression have equal response magnitudes. \(D\) is the layer’s input width; the logical initialization target is \(D^{-1/2}\). The targets above are standard deviations: logical variance scales as \(D^{-1}\), while the physical pre-clipping target \(\tau/\omega\) is independent of width.</p><p class="mapping-regularization">Centering the physical weight distribution at \(\widehat W^\diamond\) aligns the device’s symmetric point with logical zero. Near this point, potentiation and depression responses are similar, so update asymmetry is mild and causes less distortion of the intended training updates. For weights farther away, state-dependent asymmetry favors updates toward the symmetric point, creating a restoring tendency toward logical zero. Under noisy updates, this tendency induces an implicit penalty; for approximately linear response asymmetry, it resembles <strong>implicit weight decay</strong>, with a restoring component proportional to \(-W\) (<a href="https://arxiv.org/abs/2502.06309" rel="noreferrer">Wu et al., 2025</a>). Its effective strength depends on the device response and update statistics.</p></div></div>
           <div class="interactive-demo" aria-labelledby="weight-distributions-heading">
             <div class="demo-head"><h3 id="weight-distributions-heading">Logical and physical weight distributions</h3><span class="schematic-label">Explore the mapping scale</span></div>
             <p class="demo-instructions">Tune \(\omega\) to change physical occupancy and \(D\) to change the logical initialization. The compensating scale keeps the two targets compatible.</p>
-            <div id="weight-distributions-demo"><p>The physical target has standard deviation \(\tau/\omega\), while logical initialization scales as \(D^{-1/2}\). The map uses \(s=\omega\sigma_w/\tau\).</p></div>
+            <div id="weight-distributions-demo"><p>The physical target has standard deviation \(\tau/\omega\), while logical initialization scales as \(D^{-1/2}\). The map uses \(s=\omega D^{-1/2}/\tau\).</p></div>
           </div>
           <div class="design-part" id="optimizer"><span class="part-number">02</span><div><h3>Logical-space optimization</h3><p>A digital optimizer, such as Adam or AdamW, generates the signed logical update \(\Delta W_k\). Keep its moments and preconditioners digital, then use a residual buffer and threshold-triggered pulsing to transfer that update into noisy, discrete physical writes.</p><div class="design-formula" data-math="\begin{aligned}H_{k+\frac12} &amp;= H_k+\Delta W_k,\\N_k &amp;= \operatorname{trunc}\!\left(\frac{H_{k+\frac12}}{s\Delta w_{\min}}\right),\\H_{k+1} &amp;= H_{k+\frac12}-sN_k\Delta w_{\min}\end{aligned}">H<sub>k+½</sub> = H<sub>k</sub> + ΔW<sub>k</sub><br>N<sub>k</sub> = trunc(H<sub>k+½</sub> / (sΔw<sub>min</sub>))<br>H<sub>k+1</sub> = H<sub>k+½</sub> − sN<sub>k</sub>Δw<sub>min</sub></div><p class="formula-key">\(\Delta W_k\) comes from the optimizer, such as Adam. \(H\) stores the untransferred residual in logical units; \(N\) counts signed physical pulses of nominal size \(\Delta w_{\min}\). Truncation is toward zero.</p></div></div>
           <div class="design-part" id="converters"><span class="part-number">03</span><div>
             <h3>Converter alignment</h3>
-            <p>Apply converter alignment (CA) in both the forward and transposed backward matrix passes: their activations and error signals can have different, evolving distributions. Align converter ranges to balance clipping against quantization error.</p>
-            <p>The rail optimization problem chooses a norm order \(p\) and multiplier \(A\) in \(C=A\lVert x\rVert_p\) to minimize expected reconstruction error per coordinate:</p>
+            <p>Apply converter alignment (CA) in both the forward and transposed backward matrix passes: their activations and error signals can have different, evolving distributions. Align converter ranges to balance clipping against quantization error.
+            Let \(C&gt;0\) be the clipping rail for the unscaled input vector \(x\): the quantizer represents values within \([-C,C]\), and values outside this range are clipped to its endpoints.</p>
+            <p>Consider a \(D\)-dimension vector \(x\) whose elements are sampled from a distribution \(\mathcal V\). The rail optimization problem chooses a norm order \(p\) and multiplier \(A\) in \(C=A\lVert x\rVert_p\) to minimize expected reconstruction error per coordinate:</p>
             <div id="rail-optimization" class="design-formula" data-math="\begin{aligned}
 r_K(\mathcal V)&amp;:=\inf_{p\in[1,\infty]}\inf_{A&gt;0}R_K(p,A;\mathcal V),\\
 R_K(p,A;\mathcal V)&amp;:=\frac{1}{D}\,\mathbb E_{x\sim\mathcal V}\!\left[\left\lVert Q_{K,A\lVert x\rVert_p}(x)-x\right\rVert_2^2\right].
@@ -321,12 +324,34 @@ C_{\mathrm{ACIQ}}&amp;\in\operatorname*{arg\,min}_{C&gt;0}\widetilde E_{f,K}(C),
               </div>
             </details>
           </div></div>
-          <div class="callout"><p><strong>An invitation.</strong> Our architecture-level simulations are one starting point. We welcome work that develops the theory, explores different algorithms and architectures, and brings these ideas into measured hardware. The goal is to understand where analog training can deliver useful learning at a practical cost.</p></div>
+          <div class="callout"><p><strong>Looking ahead.</strong> Our architecture-level simulations are one starting point. We welcome work that develops the theory, explores different algorithms and architectures, and brings these ideas into measured hardware. The goal is to understand where analog training can deliver useful learning at a practical cost.</p></div>
         </section>
 
         <section id="resources">
           <h2>Resources</h2>
-          <div class="resource-list"><div><a href="https://arxiv.org/abs/2609.36584" rel="noreferrer">Manuscript on arXiv</a><p>Making Analog Training Scale: Co-Designing Mapping, Optimizer, and Converters.</p><span class="resource-status">arXiv:2609.36584</span></div><div><a href="https://github.com/Zhaoxian-Wu/scalable-analog-training" rel="noreferrer">Research code on GitHub</a><p>Project repository for the training framework and reproduction materials.</p></div><div><a href="https://github.com/IBM/aihwkit" rel="noreferrer">IBM AIHWKit</a><p>The open-source simulation substrate used in this study.</p></div></div>
+          <div class="resource-list">
+            <div><a href="https://arxiv.org/abs/2609.36584" rel="noreferrer">Manuscript on arXiv</a><p>Making Analog Training Scale: Co-Designing Mapping, Optimizer, and Converters.</p><span class="resource-status">arXiv:2609.36584</span></div>
+            <div><a href="https://github.com/Zhaoxian-Wu/scalable-analog-training" rel="noreferrer">Research code on GitHub</a><p>Project repository for the training framework and reproduction materials.</p></div>
+            <div><a href="https://github.com/IBM/aihwkit" rel="noreferrer">IBM AIHWKit</a><p>The open-source simulation substrate used in this study.</p></div>
+            <div><a href="https://github.com/Zhaoxian-Wu/aihwkit" rel="noreferrer">AIHWKit beta fork</a><p>Our beta fork of AIHWKit, with experimental features that may not yet be incorporated into the official toolkit.</p></div>
+            <div><a href="https://github.com/Zhaoxian-Wu/MixedPrecisionOptim" rel="noreferrer">MixedPrecisionOptim</a><p>A plug-and-play optimizer package for mixed-precision analog training, supporting modern optimizers such as Adam and Muon.</p></div>
+          </div>
+        </section>
+        <section id="bibtex" aria-labelledby="bibtex-heading">
+          <h2 id="bibtex-heading">BibTeX</h2>
+          <div class="bibtex-box">
+            <button id="copy-bibtex" type="button" aria-label="Copy BibTeX citation" hidden>Copy</button>
+            <pre><code id="bibtex-citation">@misc{wu2026makinganalogtrainingscale,
+  title         = {Making Analog Training Scale: Co-Designing Mapping, Optimizer, and Converters},
+  author        = {Wu, Zhaoxian and Gokmen, Tayfun and Fagbohungbe, Omobayode and Xiao, T. Patrick and Chen, Tianyi},
+  year          = {2026},
+  eprint        = {2609.36584},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2609.36584}
+}</code></pre>
+          </div>
+          <p id="bibtex-copy-status" role="status" aria-live="polite"></p>
         </section>
         <footer class="project-footer"><span>Making Analog Training Scale</span><span>arXiv preprint · 2026</span><a href="#top">Back to top</a></footer>
       </div>

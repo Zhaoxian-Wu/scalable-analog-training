@@ -10,7 +10,7 @@ const id = useId()
 const physicalStd = computed(() => tau / omega.value)
 const pdf = (value, std) => Math.exp(-0.5 * (value / std) ** 2) / (std * Math.sqrt(2 * Math.PI))
 const plots = computed(() => [
-  { key: 'logical', title: 'Logical weights', range: 0.6, ymax: 15, std: sigma.value, color: '#1764aa', formula: String.raw`\sigma_w = D^{-1/2} = ${sigma.value.toFixed(3)}`, axis: String.raw`W` },
+  { key: 'logical', title: 'Logical weights', range: 0.6, ymax: 15, std: sigma.value, color: '#1764aa', formula: String.raw`\operatorname{Std}(W) = D^{-1/2} = ${sigma.value.toFixed(3)}`, axis: String.raw`W` },
   { key: 'physical', title: 'Physical conductance deviations', range: 1.5, ymax: 4, std: physicalStd.value, color: '#b31b1b', formula: String.raw`\operatorname{Std}(\widehat W-\widehat W^\diamond)=\frac{\tau}{\omega}=${physicalStd.value.toFixed(3)}`, axis: String.raw`\widehat W-\widehat W^\diamond` },
 ])
 const x = (value, plot) => 43 + (value + plot.range) / (2 * plot.range) * 276
@@ -20,7 +20,7 @@ const curve = plot => Array.from({ length: 241 }, (_, i) => {
   return `${i ? 'L' : 'M'}${x(value, plot)},${y(pdf(value, plot.std), plot)}`
 }).join(' ')
 const area = plot => `${curve(plot)} L319,185 L43,185 Z`
-const scaleFormula = computed(() => String.raw`s=\frac{\omega\sigma_w}{\tau}=${scale.value.toFixed(3)}`)
+const scaleFormula = computed(() => String.raw`s=\frac{\omega D^{-1/2}}{\tau}=${scale.value.toFixed(3)}`)
 </script>
 <template>
   <div class="weight-distributions">

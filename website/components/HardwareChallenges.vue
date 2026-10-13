@@ -12,7 +12,7 @@ const symmetricWeightLabel = math(String.raw`w^\diamond`)
 const panels = [{ id: 'converter', label: 'DAC / ADC quantization' }, { id: 'update', label: 'Pulse update' }]
 const tabButtons = ref([])
 
-const activePanel = ref('update')
+const activePanel = ref('converter')
 
 const stateCount = ref(32)
 const symmetricPosition = ref(0.5)
@@ -188,7 +188,9 @@ watch([stateCount, symmetricPosition, beta], () => {
   if (activePanel.value === 'update') restartPulseAnimation()
 })
 
-onMounted(restartPulseAnimation)
+onMounted(() => {
+  if (activePanel.value === 'update') restartPulseAnimation()
+})
 onBeforeUnmount(stopPulseAnimation)
 </script>
 

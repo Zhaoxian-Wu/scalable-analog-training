@@ -63,6 +63,7 @@
 .design-formula { margin: 18px 0 12px; padding: 15px 12px; border: 1px solid var(--border); border-radius: 7px; background: var(--soft); overflow-x: auto; color: var(--ink); text-align: center; font-size: 15px; }
 .design-formula .katex-display { margin: 0; }
 .design-part .formula-key { font-size: 13px; line-height: 1.65; color: var(--muted); }
+.design-part .mapping-regularization { margin-top: 16px; }
 .mapping-targets { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 0; }
 .mapping-target { padding: 14px 10px; border: 1px solid #c8d8ed; border-radius: 7px; background: var(--primary-soft); color: var(--primary-dark); overflow-x: auto; text-align: center; font-size: 14px; }
 .mapping-target > span { display: block; margin-bottom: 12px; font-size: 12px; font-weight: 600; }

@@ -48,3 +48,27 @@ window.addEventListener("scroll", () => {
 }, {passive: true});
 window.addEventListener("resize", updateContents);
 updateContents();
+
+const copyBibtex = document.getElementById("copy-bibtex");
+const citation = document.getElementById("bibtex-citation");
+const copyStatus = document.getElementById("bibtex-copy-status");
+copyBibtex.hidden = false;
+copyBibtex.addEventListener("click", async () => {
+  const text = citation.textContent.trim();
+  let copied = false;
+  try {
+    await navigator.clipboard.writeText(text);
+    copied = true;
+  } catch {
+    // Allow copying when opening the page locally or clipboard access is denied.
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(citation);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    try { copied = document.execCommand("copy"); } catch { /* Keep text selected. */ }
+    if (copied) selection.removeAllRanges();
+  }
+  copyBibtex.textContent = copied ? "Copied!" : "Copy";
+  copyStatus.textContent = copied ? "BibTeX citation copied." : "Citation selected. Press Ctrl+C or Command+C to copy.";
+});

@@ -15,6 +15,9 @@ Open `index.html` directly, or serve this directory:
 python -m http.server 8000 --directory website
 ```
 
+The hero's BibTeX button links to the preprint citation with a Copy button.
+The citation stays readable and selectable without JavaScript.
+
 Then visit http://localhost:8000. No package installation is required. Core content
 and section navigation work without JavaScript. JavaScript adds the training-step
 explorer, interactive training-scale scatter plot, current-section highlighting,
@@ -24,7 +27,7 @@ and diagrams adapted from the presentation:
   cells, output columns, DAC, and ADC to inspect their equations. Click/tap or
   Enter/Space pins an explanation; Escape clears the pin.
 - **AIMC hardware non-ideality model:** two tabs switch between converter
-  quantization and pulse updates (selected by default). Converter controls expose
+  quantization (selected by default) and pulse updates. Converter controls expose
   input-vector size, rail, and bit depth. The pulse panel groups the trajectory,
   playback/manual stepping, and device-response controls, with its exact response
   equations below. The horizon is 4× the device-state setting, split evenly in
@@ -87,7 +90,7 @@ and diagrams adapted from the presentation:
   both fits and trajectories. Arrow keys and Home/End navigate labels.
 - **Weight distributions:** tune inverse occupancy ω and layer width D to see
   Gaussian pre-clipping targets in logical and physical coordinates. The physical
-  standard deviation is τ/ω; the logical target is D^(-1/2); s = ωσw/τ compensates
+  standard deviation is τ/ω; the logical target is D^(-1/2); s = ωD^(-1/2)/τ compensates
   for the change in occupancy. Fixed axes expose how each distribution changes.
   Orange tails mark values outside the device bounds, with τ = 1 in this example.
 

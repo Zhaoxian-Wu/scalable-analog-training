@@ -83,7 +83,7 @@ const errorTicks = computed(() => logarithmic.value
     </div>
     <div class="converter-chart">
       <div v-if="!simplified" class="converter-presets" role="group" aria-label="Rail method"><button v-for="method in methods" :key="method.id" type="button" :aria-pressed="mode === method.id" @click="preset(method.id)">{{ method.label }}</button></div>
-      <div class="converter-figure-heading"><h4>Vector coordinates</h4><span><template v-if="!simplified">{{ selected?.label || 'Custom rail' }} · </template><MathTex :tex="`C = ${rail.toFixed(3)}`" /></span></div>
+      <div class="converter-figure-heading"><h4>Vector coordinates</h4><span v-if="!simplified">{{ selected?.label || 'Custom rail' }}</span></div>
       <div class="plot-legend"><span><i class="original-key"></i>Original</span><span><i class="reconstructed-key"></i>Reconstructed</span><span><i class="clipped-key"></i>Clipped input</span><span><i class="quantization-level-key"></i>{{ 2 ** bits }} quantization levels</span></div>
       <div class="converter-vector-frame">
         <svg class="converter-vector-plot" :viewBox="`0 0 ${vectorWidth} 295`" role="group" :aria-label="`${size} ${distribution} input coordinates and their reconstruction using ${selected?.label || 'a custom rail'}, with ${bits} bits`">
