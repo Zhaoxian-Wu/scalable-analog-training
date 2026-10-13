@@ -207,7 +207,6 @@ onBeforeUnmount(stopPulseAnimation)
             <span class="nonideality-index">01 / CONVERTERS</span>
             <h3>DAC / ADC quantization</h3>
           </div>
-          <span class="nonideality-chip"><MathTex tex="\varepsilon=Q(x)-x" /></span>
         </div>
         <p class="nonideality-summary">A finite converter maps each element of an input vector onto one of a limited number of voltage or current levels.</p>
 

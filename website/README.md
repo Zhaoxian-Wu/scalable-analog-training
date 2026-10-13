@@ -60,7 +60,8 @@ and diagrams adapted from the presentation:
   with an optional logarithmic error axis. Adjusting a custom rail adds its error
   to the comparison. Rail/bit changes preserve the sample; changing size extends
   or truncates it; New sample resamples it; Reset restores all defaults.
-  Large vectors scroll horizontally. Digital prescaling keeps the physical DAC
+  All coordinates fit within the plot; bars narrow as vector size grows.
+  Digital prescaling keeps the physical DAC
   range fixed; this example isolates input quantization.
   Optimal Rail sweeps every quantizer-assignment boundary and minimizes the
   quadratic MSE within each interval to find the displayed vector's optimal
@@ -68,8 +69,14 @@ and diagrams adapted from the presentation:
   ACIQ fits zero-mean Gaussian RMS or Laplace mean-absolute statistics and
   minimizes the analytical clipping-plus-rounding model from the
   [authors' source](https://github.com/submission2019/cnn-quantization/blob/master/mse_analysis.py).
-  ACIQ uses its published 2^bits error approximation; all plotted measured errors
-  use the manuscript's common endpoint quantizer with 2^bits − 1 intervals.
+  The selected ACIQ method shows its multiplier × estimated scale, the sample
+  maximum, and any mismatch between its assumed prior and the input distribution.
+  Its population rail can exceed a short sample’s maximum; the sample-optimal
+  rail and ACIQ therefore optimize different objectives.
+  ACIQ's rounding term is adapted to the manuscript's endpoint quantizer:
+  K = 2^bits − 1 intervals, Δ = 2C/K, and approximate rounding MSE C²/(3K²).
+  Quantization, sample-optimal rail search, and ACIQ share the same interval count.
+  The resolution control displays both bits and K to make this convention explicit.
 - **Scaling results:** three views show model-size scaling and token/compute
   trajectories with endpoint fits drawn directly on each plot. Fits always use
   all five model endpoints, including when a trajectory is filtered. Hover/focus a point to inspect exact values; click,

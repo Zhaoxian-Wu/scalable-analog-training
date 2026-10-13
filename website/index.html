@@ -14,12 +14,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="assets/interactive/diagrams.css?v=eb294d149aed">
+  <link rel="stylesheet" href="assets/interactive/diagrams.css?v=682562ea857d">
   <link rel="stylesheet" href="interactives.css">
   <script src="app.js" defer></script>
   <script src="assets/training-scale-data.js" defer></script>
   <script src="training-scale.js" defer></script>
-  <script src="assets/interactive/diagrams.js?v=3bba199b3b84" defer></script>
+  <script src="assets/interactive/diagrams.js?v=fa819f5eea23" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -35,18 +35,20 @@
         <p class="project-toc-label">On this page</p>
         <nav class="project-toc-nav" aria-label="Section navigation">
           <a class="active" aria-current="location" href="#overview">Overview</a>
-          <a href="#challenge">Why analog training is hard</a>
+          <a href="#aimc">Analog in-memory computing</a>
           <a class="toc-sub" href="#analog-mvm">Analog MVM</a>
+          <a href="#challenge">Why analog training is hard</a>
           <a class="toc-sub" href="#hardware-imperfections">AIMC hardware non-ideality model</a>
           <a class="toc-sub" href="#training-landscape">Training-scale landscape</a>
           <a href="#architecture">The mixed-signal architecture</a>
           <a class="toc-sub" href="#mp-training">MP training architecture</a>
-          <a href="#gradient">The gradient bottleneck</a>
+          <a href="#gradient">Why W-grad should remain digital</a>
           <a href="#codesign">Three parts of the co-design</a>
           <a class="toc-sub" href="#mapping">Weight mapping</a>
           <a class="toc-sub" href="#optimizer">Logical-space optimization</a>
           <a class="toc-sub" href="#converters">Converter alignment</a>
           <a href="#results">Scaling results</a>
+          <a href="#research-call">Future Work</a>
           <a href="#resources">Resources</a>
         </nav>
         <div class="toc-note">Analog matrix passes.<br>Digital gradient handling.</div>
@@ -82,26 +84,32 @@
           </ul>
         </section>
 
-        <section id="challenge">
-          <h2>Why analog training is hard</h2>
-          <p>Moving weights and activations between memory and processors is a major cost of training modern neural networks. Analog in-memory computing (AIMC) stores weights as conductances in non-volatile memory crossbars and performs matrix operations where those weights reside.</p>
-          <p>Training introduces a harder requirement: small updates must survive thousands of iterations while weight and activation distributions keep changing. Finite device states, noisy and asymmetric programming, and limited converter precision can distort both the learning signal and the update trajectory.</p>
+        <section id="aimc" aria-labelledby="aimc-heading">
+          <h2 id="aimc-heading">Analog in-memory computing</h2>
+          <p>Matrix multiplication is a central operation in neural networks. In conventional digital hardware, computing it requires moving weights from memory to a processor. Analog in-memory computing (AIMC) stores weights as conductances in non-volatile memory crossbars and performs the multiplication where those weights reside, reducing data movement and offering an energy-efficient way to execute matrix operations.</p>
+          <p>A crossbar computes through electrical currents: each conductance multiplies an applied input voltage, and currents add along the output lines. Digital-to-analog converters (DACs) encode the inputs, while analog-to-digital converters (ADCs) return the result to digital circuitry. The array supports both the forward matrix pass and the transposed matrix pass used in backpropagation.</p>
           <div class="interactive-demo" id="analog-mvm" aria-labelledby="analog-mvm-heading">
             <div class="demo-head"><h3 id="analog-mvm-heading">Analog matrix–vector multiplication (MVM)</h3><span class="schematic-label">Crossbar computation</span></div>
             <p class="demo-instructions">Hover or focus a conductance cell, output column, DAC, or ADC to see how voltages become a matrix–vector product. Click, tap, or press Enter to pin an explanation; Escape clears the pin.</p>
             <div id="analog-mvm-demo"><p>DACs convert inputs to voltages. Each conductance cell multiplies a voltage by a weight, output currents sum along columns, and ADCs digitize the result: y = Ŵx. The backward pass uses the transpose: δin = Ŵᵀδout.</p></div>
           </div>
+        </section>
+
+        <section id="challenge" aria-labelledby="challenge-heading">
+          <h2 id="challenge-heading">Why analog training is hard</h2>
+          <p>Training requires more than fast matrix multiplication. Each iteration must propagate activations forward, propagate error signals backward, and use weight gradients to update the stored conductances. Small updates must remain effective over thousands of iterations as the weights and signal distributions evolve.</p>
+          <p>Two hardware constraints make this difficult. DACs and ADCs have finite precision and range, so quantization and clipping can distort the forward and backward signals. Weight programming introduces a second constraint: updates arrive as discrete pulses whose effects depend on the current conductance and can differ between increasing and decreasing directions. Together with read and write noise, these non-idealities perturb the learning signal and the update trajectory.</p>
           <div class="interactive-demo" id="hardware-imperfections" aria-labelledby="hardware-imperfections-heading">
-            <div class="demo-head"><h3 id="hardware-imperfections-heading">AIMC hardware non-ideality model</h3><span class="schematic-label">Two interactive components</span></div>
+            <div class="demo-head"><h3 id="hardware-imperfections-heading">AIMC hardware non-ideality model</h3></div>
             <p class="demo-instructions">Switch between pulse updates and converter quantization. Compare a pulse sweep or alternating pulses, adjust the device response, and inspect the equations below the plot.</p>
             <div id="hardware-imperfections-demo"><ul><li>DAC / ADC quantization maps an input vector onto finite levels.</li><li>Weight updates arrive as finite, potentially asymmetric pulses.</li></ul></div>
-            <p class="demo-caption">The pulse horizon is four times the device-state count, with a pulse sweep or alternating updates, a tunable response slope β and symmetric point w<sup>◇</sup> spanning the response-zero bounds, and an initial weight 10% above the lower bound.</p>
           </div>
+          <p>Hardware errors propagate and accumulate across layers during both the forward and backward passes. As models grow in depth and width, these errors can increasingly distort gradients and weight updates, with effects that compound over the training trajectory. This scaling challenge has kept most existing demonstrations of analog training at relatively small model and dataset scales. Scaling therefore requires preserving gradient fidelity while keeping logical weights, physical conductances, and converter ranges compatible. The training-scale landscape below compares these prior demonstrations with this work.</p>
           <figure class="training-landscape" id="training-landscape" aria-labelledby="scale-chart-heading">
             <div class="scale-chart-head"><h3 id="scale-chart-heading">The training-scale landscape</h3><span>34 study entries · logarithmic axes</span></div>
             <p class="scale-chart-instructions" id="scale-chart-instructions">Hover or focus a point to inspect a study. Click or tap to keep its details open.</p>
             <div class="scale-chart" id="scale-chart">
-              <div class="scale-plot-scroll"><svg id="scale-plot" style="display:none" viewBox="0 0 720 530" role="group" aria-labelledby="scale-plot-title" aria-describedby="scale-plot-description scale-chart-instructions"><title id="scale-plot-title">Analog training: model scale versus dataset tokens</title><desc id="scale-plot-description">Interactive version of the manuscript’s prior-training-scale figure. Both axes use logarithmic scales. This work maps 123,532,032 weights to analog arrays and processes 2,467,430,400 language tokens. Prior studies reach 34 million analog-mapped weights and 240,000 dataset tokens.</desc></svg></div>
+              <div class="scale-plot-scroll"><svg id="scale-plot" style="display:none" viewBox="0 0 720 530" role="group" aria-labelledby="scale-chart-heading" aria-describedby="scale-plot-description scale-chart-instructions"><desc id="scale-plot-description">Interactive version of the manuscript’s prior-training-scale figure. Both axes use logarithmic scales. This work maps 123,532,032 weights to analog arrays and processes 2,467,430,400 language tokens. Prior studies reach 34 million analog-mapped weights and 240,000 dataset tokens.</desc></svg></div>
               <div class="scale-tooltip" id="scale-tooltip" role="region" aria-label="Study details" hidden>
                 <div class="scale-tooltip-head"><strong id="scale-study-label"></strong><button type="button" id="scale-tooltip-close" aria-label="Close study details">×</button></div>
                 <div class="scale-neighbors" id="scale-neighbors" hidden><label for="scale-study-select">Nearby or overlapping studies</label><select id="scale-study-select"></select></div>
@@ -114,7 +122,7 @@
             <div class="scale-chart-key"><span><i></i>Prior studies</span><span><i class="scale-current-key"></i>This work</span><span>Coincident points retain their reported coordinates.</span></div>
             <figcaption>Model and dataset scale of analog training studies. Counts describe distinct analog-mapped weights and the training subset or stream actually used. Image inputs use 16 × 16 patch equivalents; language inputs use token IDs; other inputs use scalar counts. These units are a scale proxy, not equal information content. Hardware and simulation evidence are identified in each study’s details.
           </figure>
-          <div class="callout"><p><strong>The central question.</strong> Can a mixed-signal architecture scale on-chip training to larger models despite hardware limits on numerical precision?</p></div>
+          <div class="callout"><p><strong>The central question.</strong> How can analog training continue to scale with model and dataset size while preserving convergence under hardware non-idealities?</p></div>
         </section>
 
         <section id="architecture">
@@ -131,19 +139,24 @@
             <ol class="step-selector" aria-label="Explore the training step">
               <li><button type="button" class="step-button selected" aria-pressed="true" data-step="0"><span class="step-number">01</span><strong>Forward</strong><span>Matrix pass</span></button></li>
               <li><button type="button" class="step-button" aria-pressed="false" data-step="1"><span class="step-number">02</span><strong>Backward</strong><span>Transpose pass</span></button></li>
-              <li><button type="button" class="step-button digital-step" aria-pressed="false" data-step="2"><span class="step-number">03</span><strong>Accumulate</strong><span>Gradient &amp; optimizer</span></button></li>
+              <li><button type="button" class="step-button digital-step" aria-pressed="false" data-step="2"><span class="step-number">03</span><strong>W-grad</strong><span>Gradient &amp; optimizer</span></button></li>
               <li><button type="button" class="step-button digital-step" aria-pressed="false" data-step="3"><span class="step-number">04</span><strong>Program</strong><span>Thresholded pulses</span></button></li>
             </ol>
             <div class="step-detail" aria-live="polite" aria-atomic="true"><span class="domain-badge" id="step-domain">Analog matrix execution</span><p class="step-equation" id="step-equation" data-math="y=Wx">y = Wx</p><p id="step-description">Inputs pass through DACs into the conductance array. The crossbar computes the matrix–vector product, and ADCs return a digital output. Mapping and converter range alignment preserve signal fidelity.</p></div>
           </div>
-          <details><summary>Technical detail: logical weights and physical conductances</summary><div class="details-body"><p>Logical weights and physical conductances occupy different numerical spaces. A scale maps between them; the optimizer operates on logical weights rather than directly on conductances. Its updates enter a digital residual buffer.</p><p>When the accumulated update exceeds the device’s programming granularity, the controller transfers it through open-loop pulses and retains the untransferred remainder. Sub-threshold updates can therefore contribute to later writes.</p></div></details>
+          <p>This partition follows the established mixed-precision architecture of <a href="https://doi.org/10.3389/fnins.2020.00406" rel="noreferrer">Nandakumar et al. (2020)</a>: analog arrays execute forward and backward matrix passes, while digital circuitry computes and accumulates weight updates. Retaining digital weight-gradient (W-grad) computation, however, incurs dense arithmetic and storage overhead.</p>
+          <p>In principle, W-grad could instead use the parallel analog rank updates of <a href="https://doi.org/10.3389/fnins.2016.00333" rel="noreferrer">Gokmen and Vlasov (2016)</a>. Activation and error signals drive outer-product updates directly on the crossbar, reducing the update complexity of a \(D\times D\) layer from \(O(D^2)\) to \(O(D)\). Nandakumar et al. point to device-endurance concerns with this approach. We examine the tradeoff from the perspective of scaling: can this computational saving preserve the gradient information needed for stable training as models grow?</p>
         </section>
 
         <section id="gradient">
-          <h2>The gradient bottleneck</h2>
-          <p>Direct analog rank updates offer an appealing, energy-efficient way to form weight gradients: applying activation and error signals to the crossbar lets many devices accumulate their outer-product contributions in parallel, reducing the update complexity for a \(D\times D\) layer from \(O(D^2)\) to \(O(D)\). Why pay the extra digital arithmetic and storage cost? The paper argues that stable learning requires preserving the small signed residual left by gradient cancellation, while frequent quantized transfers compound write-path error. Device endurance is another concern raised by earlier mixed-precision work. We therefore accept the digital W-grad overhead to preserve gradient fidelity and consolidate optimizer updates before programming, while retaining analog execution for the forward and backward matrix passes.</p>
-          <p>Weight gradients sum many contributions that can partially cancel. The resulting update may be much smaller than the terms being accumulated, making rounding and quantization especially damaging. Fragmenting a batch update into frequent quantized transfers adds repeated programming error.</p>
-          <div class="comparison-grid"><div><span class="domain-badge analog-badge">Precision pressure</span><h3>Analog accumulation</h3><p>Finite accumulation precision and write granularity can erase small contributions or distort the final update.</p></div><div><span class="domain-badge">Proposed partition</span><h3>Digital accumulation</h3><p>Form and consolidate weight gradients digitally, then transfer the accumulated optimizer update to the array.</p></div></div>
+          <h2>Why weight-gradient accumulation should remain digital</h2>
+          <p>We accept the arithmetic and storage cost of digital W-grad for two compounding reasons: gradient reduction is highly sensitive to precision loss, and fragmenting a batch update into frequent quantized transfers repeatedly introduces write-path error. The experiments below trace these mechanisms from signal precision to the realized array update.</p>
+          <h3>W-grad is sensitive to precision loss</h3>
+          <p>First, consider a purely digital Transformer training experiment (panel a). Quantizing weights or activations to FP8 barely changes final validation loss relative to FP16, while the same precision reduction in the gradient path severely impairs convergence. This control quantizes backward error signals and parameter gradients while arithmetic and reductions remain FP32. Gradient fidelity is therefore already critical before analog accumulation or device programming enters the picture.</p>
+          <h3>Cancellation amplifies accumulation error</h3>
+          <p>A weight gradient sums many signed contributions. For one coordinate, \(+10.0\) and \(-9.9\) leave a residual of only \(0.1\): small rounding errors in the large terms can overwhelm the useful update. The cancellation factor \(\kappa=\sum_b|g_b|/|\sum_b g_b|\) measures this imbalance. Its mean is far above one across all six measured Transformer projection types (panel b). Replaying the same contributions with rounding after every addition shows why this matters: relative gradient error grows with cancellation strength, with substantial error even in FP16 and much larger error in FP8 (panel c). Accurate accumulation must preserve the small signed residual throughout the reduction.</p>
+          <h3>Consolidation avoids repeated quantized-transfer error</h3>
+          <p>Digital accumulation also controls how often an update reaches the array. Panel d holds the total batch at 128 on a symmetric finite-state device. Each micro-batch gradient enters a digital residual and immediately requests a quantized full-rank transfer. Smaller micro-batches create more transfer events; each reintroduces pulse-count truncation and capping, update-management effects, and finite-state programming error. These discrepancies accumulate over the fixed batch. Larger micro-batches consolidate more contributions digitally and request fewer transfers, reducing the one-step realized-update error. The direct rank-update result is independent of the micro-batch partition in this test and is shown once.</p>
           <div class="interactive-demo" aria-labelledby="gradient-diagnostics-heading">
             <div class="demo-head"><h3 id="gradient-diagnostics-heading">Why the gradient path needs higher fidelity</h3><span class="schematic-label">Four experiments, one argument</span></div>
             <p class="demo-instructions">Explore precision sensitivity, cancellation, accumulation error, and fragmented transfers. Select a label to view each experiment; hover, tap, or focus a bar or point for its values.</p>
@@ -158,7 +171,7 @@
               <p class="demo-caption">Four-seed means; whiskers and bands show the observed seed min–max range. <a href="assets/gradient-precision.svg?v=73f831b1ab08">View all four panels (SVG)</a>.</p>
             </div>
           </div>
-          <div class="callout"><p><strong>Design principle.</strong> Efficient matrix multiplication alone is insufficient. The update path must preserve the small, accumulated signals that drive learning.</p></div>
+          <div class="callout"><p><strong>Design principle.</strong> Preserve the net gradient digitally and consolidate updates before programming the array. This protects the learning signal while analog forward and backward matrix passes retain their computational advantage.</p></div>
         </section>
 
         <section id="codesign">
@@ -171,14 +184,63 @@
             <div id="weight-distributions-demo"><p>The physical target has standard deviation \(\tau/\omega\), while logical initialization scales as \(D^{-1/2}\). The map uses \(s=\omega\sigma_w/\tau\).</p></div>
           </div>
           <div class="design-part" id="optimizer"><span class="part-number">02</span><div><h3>Logical-space optimization</h3><p>A digital optimizer, such as Adam or AdamW, generates the signed logical update \(\Delta W_k\). Keep its moments and preconditioners digital, then use a residual buffer and threshold-triggered pulsing to transfer that update into noisy, discrete physical writes.</p><div class="design-formula" data-math="\begin{aligned}H_{k+\frac12} &amp;= H_k+\Delta W_k,\\N_k &amp;= \operatorname{trunc}\!\left(\frac{H_{k+\frac12}}{s\Delta w_{\min}}\right),\\H_{k+1} &amp;= H_{k+\frac12}-sN_k\Delta w_{\min}\end{aligned}">H<sub>k+½</sub> = H<sub>k</sub> + ΔW<sub>k</sub><br>N<sub>k</sub> = trunc(H<sub>k+½</sub> / (sΔw<sub>min</sub>))<br>H<sub>k+1</sub> = H<sub>k+½</sub> − sN<sub>k</sub>Δw<sub>min</sub></div><p class="formula-key">\(\Delta W_k\) comes from the optimizer, such as Adam. \(H\) stores the untransferred residual in logical units; \(N\) counts signed physical pulses of nominal size \(\Delta w_{\min}\). Truncation is toward zero.</p></div></div>
-          <div class="design-part" id="converters"><span class="part-number">03</span><div><h3>Converter alignment</h3><p>Apply converter alignment (CA) in both the forward and transposed backward matrix passes: their activations and error signals can have different, evolving distributions. Align converter ranges to balance clipping against quantization error. Max alignment uses \(C=\lVert x\rVert_\infty\) as an inexpensive approximation to rail optimization.</p><div class="design-formula" data-math="\begin{aligned}C &amp;= \lVert x\rVert_\infty,\\u &amp;= \operatorname{DAC}(x/C),\\z &amp;= (\widehat W-\widehat W^\diamond)u+\xi,\\y &amp;= sC\,\operatorname{ADC}(z)\end{aligned}">\(C=\lVert x\rVert_\infty\)<br>u = DAC(x/C)<br>z = (Ŵ − Ŵ⋄)u + ξ<br>y = sC · ADC(z)</div><p class="formula-key">Prescale \(x\) digitally to a fixed DAC range \([-1,1]\), then restore \(sC\) after conversion. \(u\) is the DAC output; \(z\) is the physical crossbar current, including read noise \(\xi\). The physical ADC rail is chosen separately for this current.</p></div></div>
+          <div class="design-part" id="converters"><span class="part-number">03</span><div>
+            <h3>Converter alignment</h3>
+            <p>Apply converter alignment (CA) in both the forward and transposed backward matrix passes: their activations and error signals can have different, evolving distributions. Align converter ranges to balance clipping against quantization error.</p>
+            <p>The rail optimization problem chooses a norm order \(p\) and multiplier \(A\) in \(C=A\lVert x\rVert_p\) to minimize expected reconstruction error per coordinate:</p>
+            <div id="rail-optimization" class="design-formula" data-math="\begin{aligned}
+r_K(\mathcal V)&amp;:=\inf_{p\in[1,\infty]}\inf_{A&gt;0}R_K(p,A;\mathcal V),\\
+R_K(p,A;\mathcal V)&amp;:=\frac{1}{D}\,\mathbb E_{x\sim\mathcal V}\!\left[\left\lVert Q_{K,A\lVert x\rVert_p}(x)-x\right\rVert_2^2\right].
+\end{aligned}">\[\begin{aligned}
+r_K(\mathcal V)&amp;:=\inf_{p\in[1,\infty]}\inf_{A&gt;0}R_K(p,A;\mathcal V),\\
+R_K(p,A;\mathcal V)&amp;:=\frac{1}{D}\,\mathbb E_{x\sim\mathcal V}\!\left[\left\lVert Q_{K,A\lVert x\rVert_p}(x)-x\right\rVert_2^2\right].
+\end{aligned}\]</div>
+            <p class="formula-key">\(\mathcal V\) is the input distribution, \(D\) is the vector dimension, and \(Q_{K,C}\) is the coordinatewise uniform saturating quantizer with resolution parameter \(K\) and rail \(C\).</p>
+            <p><strong>Max alignment is an inexpensive approximate solution:</strong> choose \((p,A)=(\infty,1)\), giving \(C=\lVert x\rVert_\infty\). This avoids repeated distribution fitting and rail optimization during training; it need not minimize distortion at finite precision.</p>
+            <div class="design-formula" data-math="\begin{aligned}C &amp;= \lVert x\rVert_\infty,\\u &amp;= \operatorname{DAC}(x/C),\\z &amp;= (\widehat W-\widehat W^\diamond)u+\xi,\\y &amp;= sC\,\operatorname{ADC}(z)\end{aligned}">\(C=\lVert x\rVert_\infty\)<br>u = DAC(x/C)<br>z = (Ŵ − Ŵ⋄)u + ξ<br>y = sC · ADC(z)</div>
+            <p class="formula-key">Prescale \(x\) digitally to a fixed DAC range \([-1,1]\), then restore \(sC\) after conversion. \(u\) is the DAC output; \(z\) is the physical crossbar current, including read noise \(\xi\). The physical ADC rail is chosen separately for this current.</p>
+          </div></div>
           <div class="interactive-demo" aria-labelledby="converter-alignment-heading">
             <div class="demo-head"><h3 id="converter-alignment-heading">Try converter alignment</h3><span class="schematic-label">Input quantization</span></div>
             <p class="demo-instructions">Choose Gaussian or Laplacian inputs and a vector size, then compare max alignment, Optimal Rail, and ACIQ rails. Paired bars show each original and reconstructed coordinate; the error chart compares all methods on the same vector.</p>
             <div id="converter-alignment-demo"><p>A narrow rail clips large coordinates; a wide rail spreads conversion levels apart. Max alignment sets C to the largest absolute input, eliminating input clipping. With JavaScript enabled, compare paired coordinate bars and method errors on Gaussian or Laplacian vectors of adjustable size.</p></div>
             <p class="demo-caption">The rail \(C\) describes the range of the unscaled digital input. Prescaling by \(1/C\) keeps the physical DAC range fixed.</p>
           </div>
-          <details><summary>Technical detail: why range alignment matters</summary><div class="details-body"><p>A wide converter range avoids saturation but allocates fewer effective levels to typical signals. A narrow range improves resolution but clips large values. Converter alignment is an inexpensive approximation to rail optimization: choose \(C=\lVert x\rVert_\infty\) rather than repeatedly fitting a signal distribution and minimizing its expected reconstruction error. The manuscript jointly optimizes norm order \(p\) and multiplier \(A\) in \(C=A\lVert x\rVert_p\). Max alignment, \((p,A)=(\infty,1)\), is asymptotically optimal within this family as precision increases under the stated assumptions; it need not minimize error at finite bit depth. Apply it to forward activations and backward error signals, with ADC range management chosen separately for the resulting analog currents.</p></div></details>
+          <details id="aciq-technical-detail">
+            <summary>Technical detail: ACIQ formulation and why we use max alignment</summary>
+            <div class="details-body">
+              <h4>Analytical clipping for integer quantization</h4>
+              <p>ACIQ selects a scalar rail under an assumed, centered population density \(f\). Its approximate mean squared error combines clipping beyond \([-C,C]\) with rounding error \(\Delta^2/12\), where \(\Delta=2C/K\):</p>
+            <div id="aciq-general" class="design-formula" data-math="\begin{aligned}
+C_{\mathrm{ACIQ}}&amp;\in\operatorname*{arg\,min}_{C&gt;0}\widetilde E_{f,K}(C),\\
+\widetilde E_{f,K}(C)&amp;=\int_{|z|&gt;C}(|z|-C)^2f(z)\,dz+\frac{C^2}{3K^2}.
+\end{aligned}">\[\begin{aligned}
+C_{\mathrm{ACIQ}}&amp;\in\operatorname*{arg\,min}_{C&gt;0}\widetilde E_{f,K}(C),\\
+\widetilde E_{f,K}(C)&amp;=\int_{|z|&gt;C}(|z|-C)^2f(z)\,dz+\frac{C^2}{3K^2}.
+\end{aligned}\]</div>
+              <p>For Gaussian inputs \(z\sim\mathcal N(0,\sigma^2)\), and Laplace inputs \(z\sim\operatorname{Laplace}(0,b_L)\), the clipping integrals give:</p>
+            <div id="aciq-gaussian" class="design-formula" data-math="\begin{aligned}
+\widetilde E_{G,K}(C)&amp;=(\sigma^2+C^2)\operatorname{erfc}\!\left(\frac{C}{\sqrt2\sigma}\right)\\
+&amp;\quad-\sqrt{\frac2\pi}\,C\sigma\,e^{-C^2/(2\sigma^2)}+\frac{C^2}{3K^2}.
+\end{aligned}">\[\begin{aligned}
+\widetilde E_{G,K}(C)&amp;=(\sigma^2+C^2)\operatorname{erfc}\!\left(\frac{C}{\sqrt2\sigma}\right)\\
+&amp;\quad-\sqrt{\frac2\pi}\,C\sigma\,e^{-C^2/(2\sigma^2)}+\frac{C^2}{3K^2}.
+\end{aligned}\]</div>
+            <div id="aciq-laplace" class="design-formula" data-math="\widetilde E_{L,K}(C)=2b_L^2e^{-C/b_L}+\frac{C^2}{3K^2}.">\[\widetilde E_{L,K}(C)=2b_L^2e^{-C/b_L}+\frac{C^2}{3K^2}.\]</div>
+              <p>Here \(\sigma\) is the Gaussian standard deviation, \(b_L=\mathbb E|z|\) is the centered Laplace scale, and \(\operatorname{erfc}\) is the complementary error function. Setting the derivative to zero gives \(C=t_G(K)\sigma\) or \(C=t_L(K)b_L\); these resolution-dependent multipliers can be precomputed.</p>
+              <p><strong>Resolution convention.</strong> Original ACIQ uses \(2^b\) bins at \(b\) bits. The playground adapts its rounding term to the displayed endpoint quantizer, with \(K=2^b-1\) intervals, while keeping the same clipping integrals. These formulas are analytical approximations to population error, not the displayed vector’s exact MSE. <a href="https://github.com/submission2019/cnn-quantization/blob/master/mse_analysis.py" rel="noreferrer">Authors’ ACIQ formulation</a>.</p>
+              <h4>Why our training architecture uses max alignment</h4>
+              <p><strong>Adapt to changing distributions without choosing a prior.</strong> During training, forward activations and backward error signals evolve. A distribution-specific threshold can become suboptimal as its assumed law or scale changes, requiring repeated estimation and recalibration. \(C=\lVert x\rVert_\infty\) adapts directly to each vector with one maximum-absolute-value reduction and avoids input clipping. The concern is maintaining a suitable distribution model during training, rather than recomputing ACIQ’s scalar multiplier.</p>
+              <p><strong>Approximate the norm–rail optimum with a simple rule.</strong> The manuscript optimizes \(C=A\lVert x\rVert_p\) through \(r_K(\mathcal V)\). For fixed dimension \(D\ge2\) and an absolutely continuous input law with finite second moment, it proves that max alignment approaches the best distortion in this family as precision increases:</p>
+            <div id="aciq-asymptotic" class="design-formula" data-math="\lim_{K\to\infty}\frac{R_K(\infty,1;\mathcal V)}{r_K(\mathcal V)}=1.">\[\lim_{K\to\infty}\frac{R_K(\infty,1;\mathcal V)}{r_K(\mathcal V)}=1.\]</div>
+              <p><strong>Check precision and width, not one sample.</strong> The manuscript compares calibrated norm–rail policies and fixed Gaussian/Laplace ACIQ thresholds across both precision and dimension. At \(D=48\), max alignment is within 10% of the calibrated distortion from four bits onward for both synthetic product laws; the curves nearly coincide at higher precision. The fixed ACIQ comparators show a remaining gap and sensitivity to the assumed prior.</p>
+              <figure>
+                <a href="assets/converter-alignment.png" aria-label="Open the full-size manuscript converter-alignment comparison"><img src="assets/converter-alignment.png" alt="Manuscript comparison of max alignment, calibrated norm–rail optimization, fixed RMS, and Gaussian/Laplace ACIQ thresholds over quantization precision and vector width." loading="lazy"></a>
+                <figcaption>Manuscript’s controlled reconstruction-distortion experiment. Precision scans use 100,000 vectors at \(D=48\); width scans use six bits. It evaluates original, fixed ACIQ thresholds with \(K_b=2^b-2\) endpoint intervals. The playground above instead refits ACIQ scales on one vector and uses \(2^b-1\) intervals. <a href="assets/converter-alignment.png">Open full-size figure</a>.</figcaption>
+              </figure>
+              <p>These results support a low-overhead, distribution-agnostic training policy, without claiming universal finite-bit optimality. At six bits, the 10% criterion holds through \(D=1{,}024\), and the gap opens around \(D=2{,}048\), especially for Laplace inputs. ACIQ can be useful when its prior matches, particularly at low precision. This experiment isolates input quantization; it does not measure end-to-end training accuracy or energy.</p>
+            </div>
+          </details>
         </section>
 
         <section id="results">
@@ -191,6 +253,75 @@
             <div id="scaling-results-demo"><figure><a href="assets/scaling-results.png" aria-label="Open full-size Transformer scaling results"><img src="assets/scaling-results.png" alt="Five panels showing the manuscript’s analog and digital Transformer training results across model scales." loading="lazy"></a><figcaption>Preliminary scaling results under the Chinchilla-style training protocol. Parameter-scaling fits yield \(L\propto N^{-0.231}\) for analog training and \(L\propto N^{-0.238}\) for digital AdamW. One seed per condition.</figcaption></figure></div>
           </div>
           <div class="callout"><p><strong>How to read the result.</strong> Similar scaling exponents indicate comparable loss improvement with increasing model size over the evaluated range. Analog training still has a persistent validation-loss gap relative to the digital baseline.</p></div>
+        </section>
+
+        <section id="research-call" aria-labelledby="research-call-heading">
+          <h2 id="research-call-heading">Future Work</h2>
+          <p>We believe analog training chips deserve a broader research effort connecting machine learning, optimization, computer architecture, circuits, and device physics. This work explores one way to make analog training scale, but many fundamental questions remain open. Several directions seem especially promising:</p>
+          <div class="design-part"><span class="part-number" aria-hidden="true">01</span><div><h3>A principled approach to analog training</h3><p>What numerical fidelity does learning actually require? A principled approach would connect hardware noise, finite precision, and imperfect weight updates to optimization and generalization, then use that understanding to guide algorithm and hardware design. Especially useful would be predictions of how these requirements change with model size and training duration, giving hardware designers targets grounded in learning behavior.</p>
+            <details class="research-papers">
+              <summary>Related papers</summary>
+              <div class="details-body">
+                <ul>
+                  <li>Wu et al. (2024). <a href="https://arxiv.org/abs/2406.12774" rel="noreferrer">Towards Exact Gradient-based Training on Analog In-memory Computing</a>. Convergence analysis of analog SGD and Tiki-Taka under asymmetric updates.</li>
+                  <li>Wu et al. (2025). <a href="https://arxiv.org/abs/2502.06309" rel="noreferrer">Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions</a>. Connects general device response functions to training dynamics and residual learning.</li>
+                  <li>Onen et al. (2022). <a href="https://doi.org/10.3389/frai.2022.891624" rel="noreferrer">Neural Network Training With Asymmetric Crosspoint Elements</a>. Uses coupled dynamical systems to understand and accommodate asymmetric devices.</li>
+                </ul>
+              </div>
+            </details>
+          </div></div>
+          <div class="design-part"><span class="part-number" aria-hidden="true">02</span><div><h3>Learning algorithms designed for analog hardware</h3><p>Can we design optimizers, model architectures, and training recipes that work naturally with noisy computation and discrete updates? Promising questions include whether we can reduce the precision or storage needed for gradients and optimizer state, and whether alternatives to standard backpropagation offer a better balance of learning quality and hardware cost. Digital gradient handling is our current design choice; finding efficient alternatives remains an open research direction.</p>
+            <details class="research-papers">
+              <summary>Related papers</summary>
+              <div class="details-body">
+                <ul>
+                  <li>Gokmen and Haensch (2020). <a href="https://doi.org/10.3389/fnins.2020.00103" rel="noreferrer">Algorithm for Training Neural Networks on Resistive Device Arrays</a>. Introduces Tiki-Taka to address asymmetric analog weight updates.</li>
+                  <li>Gokmen (2021). <a href="https://doi.org/10.3389/frai.2021.699148" rel="noreferrer">Enabling Training of Neural Networks on Noisy Hardware</a>. Develops Tiki-Taka v2 for training with noisy, limited-state devices.</li>
+                  <li>Rasch et al. (2024). <a href="https://www.nature.com/articles/s41467-024-51221-z" rel="noreferrer">Fast and robust analog in-memory deep neural network training</a>. Develops analog update algorithms with improved robustness to reference errors.</li>
+                  <li>Scellier et al. (2023). <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/a52b0d191b619477cc798d544f4f0e4b-Abstract-Conference.html" rel="noreferrer">Energy-based learning algorithms for analog computing: a comparative study</a>. Compares energy-based alternatives to backpropagation on common models and datasets.</li>
+                </ul>
+              </div>
+            </details>
+          </div></div>
+          <div class="design-part"><span class="part-number" aria-hidden="true">03</span><div><h3>Architecture research beyond a single crossbar</h3><p>What should a complete analog training computer look like? There is a broad design space in how analog arrays, digital compute, memory, and communication work together. Exploring that space could reveal how to organize many tiles or chips, reuse training data, and place gradient and optimizer computation so that local analog efficiency translates into lower energy and faster training for the whole system.</p>
+            <details class="research-papers">
+              <summary>Related papers</summary>
+              <div class="details-body">
+                <ul>
+                  <li>Nandakumar et al. (2020). <a href="https://doi.org/10.3389/fnins.2020.00406" rel="noreferrer">Mixed-Precision Deep Learning Based on Computational Memory</a>. Studies analog matrix computation with digital update computation and accumulation.</li>
+                  <li>Song et al. (2017). <a href="https://doi.org/10.1109/HPCA.2017.55" rel="noreferrer">PipeLayer: A Pipelined ReRAM-Based Accelerator for Deep Learning</a>. Explores pipelined ReRAM architectures for training and inference.</li>
+                  <li>Peng et al. (2020 preprint). <a href="https://arxiv.org/abs/2003.06471" rel="noreferrer">DNN+NeuroSim V2.0: An End-to-End Benchmarking Framework for Compute-in-Memory Accelerators for On-chip Training</a>. Links training accuracy to estimates of chip area, energy, and throughput.</li>
+                  <li>Wu et al. (2026 revision). <a href="https://arxiv.org/abs/2410.15155" rel="noreferrer">On the Convergence Theory of Pipeline Gradient-based Analog In-memory Training</a>. Analyzes asynchronous pipeline training with analog update imperfections and stale weights.</li>
+                </ul>
+              </div>
+            </details>
+          </div></div>
+          <div class="design-part"><span class="part-number" aria-hidden="true">04</span><div><h3>Devices and circuits guided by learning needs</h3><p>Which physical improvements would most improve training? Connecting learning experiments to device and circuit design could help prioritize update symmetry, programming resolution, endurance, noise, and conversion cost. A promising goal is to identify which imperfections algorithms can tolerate or compensate for, and which require better hardware, then build and test chips around those requirements.</p>
+            <details class="research-papers">
+              <summary>Related papers</summary>
+              <div class="details-body">
+                <ul>
+                  <li>Gokmen and Vlasov (2016). <a href="https://doi.org/10.3389/fnins.2016.00333" rel="noreferrer">Acceleration of Deep Neural Network Training with Resistive Cross-Point Devices: Design Considerations</a>. Derives device requirements from neural-network training simulations.</li>
+                  <li>Onen et al. (2022). <a href="https://doi.org/10.1126/science.abp8064" rel="noreferrer">Nanosecond protonic programmable resistors for analog deep learning</a>. Demonstrates programmable devices with fast conductance modulation.</li>
+                  <li>Fuller et al. (2019). <a href="https://doi.org/10.1126/science.aaw5581" rel="noreferrer">Parallel programming of an ionic floating-gate memory array for scalable neuromorphic computing</a>. Demonstrates array-level parallel programming with linear and symmetric updates.</li>
+                  <li>Ambrogio et al. (2018). <a href="https://www.nature.com/articles/s41586-018-0180-5" rel="noreferrer">Equivalent-accuracy accelerated neural-network training using analogue memory</a>. Combines phase-change memory and capacitors in mixed hardware/software training experiments.</li>
+                </ul>
+              </div>
+            </details>
+          </div></div>
+          <div class="design-part"><span class="part-number" aria-hidden="true">05</span><div><h3>Scaling up and finding useful applications</h3><p>How far can analog training scale, and where would it be most valuable? Larger models and longer training runs could establish how model quality changes with hardware resources and energy. Fine-tuning, continual learning, and adaptation on edge devices offer complementary questions: can local weight updates make deployed systems more useful under tight power and memory budgets? Shared benchmarks and working chip demonstrations would help turn these possibilities into evidence.</p>
+            <details class="research-papers">
+              <summary>Related papers</summary>
+              <div class="details-body">
+                <ul>
+                  <li>Hoffmann et al. (2022). <a href="https://arxiv.org/abs/2203.15556" rel="noreferrer">Training Compute-Optimal Large Language Models</a>. Provides a digital reference for jointly scaling model size and training data.</li>
+                  <li>Athena et al. (2024). <a href="https://doi.org/10.3389/felec.2023.1331280" rel="noreferrer">Demonstration of transfer learning using 14 nm technology analog ReRAM array</a>. Investigates transfer learning with an analog ReRAM array.</li>
+                  <li>Hu et al. (2021 preprint). <a href="https://arxiv.org/abs/2106.09685" rel="noreferrer">LoRA: Low-Rank Adaptation of Large Language Models</a>. Provides a digital method for reducing trainable parameters, motivating research on efficient analog adaptation.</li>
+                </ul>
+              </div>
+            </details>
+          </div></div>
+          <div class="callout"><p><strong>An invitation.</strong> Our architecture-level simulations are one starting point. We welcome work that develops the theory, explores different algorithms and architectures, and brings these ideas into measured hardware. The goal is to understand where analog training can deliver useful learning at a practical cost.</p></div>
         </section>
 
         <section id="resources">

@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import data from '../assets/scaling-results-data.json'
 import MathTex from './MathTex.vue'
 
@@ -11,7 +11,18 @@ const panels = [
   { label: 'Compute trajectory', kind: 'compute', symbol: 'C', axis: 'Algorithmic training compute (PF-days)', takeaway: 'Loss decreases with the shared full-model compute proxy in both paths. The overlaid fits describe the five model endpoints.' },
 ]
 const panel = computed(() => panels[selected.value])
-const fitFormula = profile => String.raw`L\propto ${panel.value.symbol}^{-${data.fits[profile][panel.value.kind].exponent.toFixed(3)}}`
+const fitExponent = profile => data.fits[profile][panel.value.kind].exponent.toFixed(3)
+const fitFormula = profile => String.raw`L\propto ${panel.value.symbol}^{-${fitExponent(profile)}}`
+const legendContent = ref(null), legendSize = ref({ width: 300, height: 80 })
+let legendObserver
+onMounted(() => {
+  legendObserver = new ResizeObserver(() => {
+    const element = legendContent.value
+    if (element) legendSize.value = { width: Math.ceil(element.offsetWidth), height: Math.ceil(element.offsetHeight) }
+  })
+  legendObserver.observe(legendContent.value)
+})
+onBeforeUnmount(() => legendObserver?.disconnect())
 const trajectory = computed(() => panel.value.kind !== 'params')
 const models = computed(() => trajectory.value && modelId.value !== 'all' ? data.models.filter(m => m.id === modelId.value) : data.models)
 const profiles = [{ id: 'digital', label: 'Digital AdamW', color: '#1764aa' }, { id: 'analog', label: 'MP Analog Adam', color: '#b31b1b' }]
@@ -133,10 +144,20 @@ function navigate(event) {
               </g>
             </g>
           </g>
+          <g class="scaling-fit-legend" :transform="`translate(${680 - legendSize.width - 14} 38)`" role="group" aria-label="Power-law fits to all five model endpoints" pointer-events="none">
+            <foreignObject :width="legendSize.width" :height="legendSize.height">
+              <div xmlns="http://www.w3.org/1999/xhtml" ref="legendContent" class="scaling-fit-legend-content">
+                <div v-for="profile in profiles" :key="profile.id" class="scaling-fit-legend-row" :style="{ color: profile.color }">
+                  <svg width="30" height="8" viewBox="0 0 30 8" aria-hidden="true"><line x1="2" y1="4" x2="28" y2="4" :stroke="profile.color" stroke-width="3" stroke-linecap="round" :stroke-dasharray="profile.id === 'analog' ? '1 6' : undefined"/></svg>
+                  <span>{{ profile.label }} fit:</span><MathTex :tex="fitFormula(profile.id)"/>
+                </div>
+              </div>
+            </foreignObject>
+          </g>
         </svg>
       </div>
       <div v-if="trajectory" class="plot-legend model-legend"><span v-for="model in models" :key="model.id"><i :style="{ background: colors[model.id] }"></i>{{ model.label }}</span></div>
-      <div class="fit-summary"><span v-for="profile in profiles" :key="profile.id" :style="{ color: profile.color }">{{ profile.label }} fit: <MathTex :tex="fitFormula(profile.id)" /></span><span>{{ trajectory ? 'Thick blue/red lines: fits to all five model endpoints · larger markers: recorded endpoints' : 'Markers: recorded endpoints · lines: endpoint fits' }} · shaded region: extrapolation to 10× the largest endpoint</span></div>
+      <div class="fit-summary"><span>{{ trajectory ? 'Thick blue/red lines: fits to all five model endpoints · larger markers: recorded endpoints' : 'Markers: recorded endpoints · lines: endpoint fits' }} · shaded region: extrapolation to 10× the largest endpoint</span></div>
       <div class="result-inspection" aria-live="polite" aria-atomic="true">
         <template v-if="inspected"><div class="inspection-head"><strong>{{ inspected.profile.label }} · {{ inspected.model.label }}</strong><button v-if="pinned" type="button" @click="clear">Clear selection</button><span v-else>Click to pin</span></div><dl><div><dt>Validation loss</dt><dd>{{ inspected.loss.toFixed(4) }}</dd></div><div><dt>Evaluation step</dt><dd>{{ inspected.step.toLocaleString('en-US') }}</dd></div><div><dt>Processed tokens</dt><dd>{{ inspected.tokens.toLocaleString('en-US') }}</dd></div><div><dt>Compute (PF-days)</dt><dd>{{ (inspected.tokens * inspected.model.computePerToken).toPrecision(5) }}</dd></div></dl></template>
         <p v-else>Hover or focus a recorded point to inspect its values. Click, tap, or press Enter to pin; Escape clears the selection.</p>

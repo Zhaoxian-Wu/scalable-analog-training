@@ -15,8 +15,10 @@ export function sampleVector(distribution, size, seed = 1337) {
   })
 }
 
+export const quantizationIntervals = bits => 2 ** bits - 1
+
 export function quantize(values, rail, bits) {
-  const intervals = 2 ** bits - 1
+  const intervals = quantizationIntervals(bits)
   const delta = 2 * rail / intervals
   const roundEven = value => {
     const lower = Math.floor(value)
@@ -34,7 +36,7 @@ export function quantize(values, rail, bits) {
 // assignment boundaries the squared error is P - 2BC + AC². Sweep all boundaries
 // and minimize that quadratic on each interval, including the unbounded tail.
 export function optimalRail(values, bits) {
-  const intervals = 2 ** bits - 1
+  const intervals = quantizationIntervals(bits)
   const magnitudes = values.map(Math.abs)
   if (magnitudes.every(x => x === 0)) return 1
   const events = []
@@ -67,11 +69,12 @@ export function optimalRail(values, bits) {
   return bestRail
 }
 
-// ACIQ analytical population MSE models from the authors' mse_analysis.py:
+// ACIQ population-error approximation, adapted to the endpoint quantizer above.
 // https://github.com/submission2019/cnn-quantization/blob/master/mse_analysis.py
+// Its K=2^bits-1 intervals give Delta=2C/K and rounding MSE Delta^2/12.
 // Gaussian: (σ²+C²)erfc(C/(√2σ)) - √(2/π)Cσ exp(-C²/(2σ²))
-//           + C²/(3·2^(2bits))
-// Laplace: 2b² exp(-C/b) + C²/(3·2^(2bits)).
+//           + C²/(3K²)
+// Laplace: 2b² exp(-C/b) + C²/(3K²).
 // Solve their derivatives for the dimensionless multiplier by bisection.
 function erfc(value) {
   const t = 1 / (1 + 0.5 * value)
@@ -81,7 +84,7 @@ function erfc(value) {
     (-0.82215223 + t * 0.17087277)))))))))
 }
 export function aciqMultiplier(distribution, bits) {
-  const denominator = 3 * 2 ** (2 * bits)
+  const denominator = 3 * quantizationIntervals(bits) ** 2
   const derivative = distribution === 'gaussian'
     ? t => t * erfc(t / Math.sqrt(2)) - Math.sqrt(2 / Math.PI) * Math.exp(-t * t / 2) + t / denominator
     : t => t / denominator - Math.exp(-t)
@@ -93,10 +96,15 @@ export function aciqMultiplier(distribution, bits) {
   }
   return (lower + upper) / 2
 }
-export function aciqRail(values, bits, distribution) {
+export function aciqEstimate(values, bits, distribution) {
   // Fit a centered population model without changing the vector being quantized.
   const scale = distribution === 'gaussian'
     ? Math.sqrt(values.reduce((sum, x) => sum + x * x, 0) / values.length)
     : values.reduce((sum, x) => sum + Math.abs(x), 0) / values.length
-  return Math.max(Number.EPSILON, aciqMultiplier(distribution, bits) * scale)
+  const multiplier = aciqMultiplier(distribution, bits)
+  return { scale, multiplier, intervals: quantizationIntervals(bits), rail: Math.max(Number.EPSILON, multiplier * scale) }
+}
+
+export function aciqRail(values, bits, distribution) {
+  return aciqEstimate(values, bits, distribution).rail
 }

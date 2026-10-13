@@ -1,11 +1,12 @@
 <script setup>
 import { computed, ref } from 'vue'
-import { sampleVector, quantize, optimalRail, aciqRail } from './converter-math.js'
+import { sampleVector, quantize, optimalRail, aciqEstimate, quantizationIntervals } from './converter-math.js'
 import MathTex from './MathTex.vue'
 const props = defineProps({ simplified: { type: Boolean, default: false }, idPrefix: { type: String, default: 'alignment' } })
 const controlId = name => `${props.idPrefix}-${name}`
 const distribution = ref('gaussian'), size = ref(32), bits = ref(5), seed = ref(1337)
 const mode = ref(props.simplified ? 'custom' : 'max'), logarithmic = ref(false)
+const intervals = computed(() => quantizationIntervals(bits.value))
 const signal = computed(() => sampleVector(distribution.value, size.value, seed.value))
 const maximum = computed(() => Math.max(...signal.value.map(Math.abs)))
 const customRail = ref(maximum.value)
@@ -13,11 +14,18 @@ const methods = computed(() => props.simplified ? [] : [
   { id: 'narrow', label: 'Too narrow', rail: maximum.value * 0.35 },
   { id: 'wide', label: 'Too wide', rail: maximum.value * 2 },
   { id: 'max', label: 'Max aligned (CA)', rail: maximum.value },
-  { id: 'optimal', label: 'Optimal Rail', rail: optimalRail(signal.value, bits.value) },
-  { id: 'gaussian', label: 'ACIQ-Gaussian', rail: aciqRail(signal.value, bits.value, 'gaussian') },
-  { id: 'laplacian', label: 'ACIQ-Laplacian', rail: aciqRail(signal.value, bits.value, 'laplacian') },
+  { id: 'optimal', label: 'Optimal Rail (sample)', rail: optimalRail(signal.value, bits.value) },
+  ...['gaussian', 'laplacian'].map(model => ({
+    id: model, model, label: model === 'gaussian' ? 'ACIQ-Gaussian' : 'ACIQ-Laplacian',
+    ...aciqEstimate(signal.value, bits.value, model),
+  })),
 ].map(method => ({ ...method, result: quantize(signal.value, method.rail, bits.value) })))
 const selected = computed(() => methods.value.find(method => method.id === mode.value))
+const aciqModelName = computed(() => selected.value?.model === 'gaussian' ? 'Gaussian' : 'Laplace')
+const inputModelName = computed(() => distribution.value === 'gaussian' ? 'Gaussian' : 'Laplace')
+const aciqCalculation = computed(() => selected.value?.model
+  ? String.raw`C\approx${selected.value.multiplier.toFixed(3)}\times${selected.value.scale.toFixed(3)}\approx${selected.value.rail.toFixed(3)}`
+  : '')
 const rail = computed(() => selected.value ? selected.value.rail : customRail.value)
 const railLimit = computed(() => Math.max(maximum.value * 2, customRail.value, ...methods.value.map(method => method.rail)) * 1.1)
 const result = computed(() => selected.value ? selected.value.result : quantize(signal.value, rail.value, bits.value))
@@ -33,12 +41,21 @@ const explanations = {
   laplacian: 'ACIQ-Laplacian fits a zero-mean Laplace distribution using the vector’s mean absolute value and selects its analytical rail.',
   custom: 'Your custom rail controls the balance between clipping and rounding error. Compare its measured error with the six reference methods below.',
 }
-const vectorWidth = computed(() => Math.max(405, size.value * 10 + 85))
-const plotWidth = computed(() => vectorWidth.value - 85)
+// Keep axes and labels at a stable scale; fit more coordinates by narrowing bars.
+const vectorWidth = 600
+const plotWidth = vectorWidth - 85
 const extent = computed(() => Math.max(maximum.value, rail.value) * 1.15)
-const x = i => 52 + (i + 0.5) * plotWidth.value / size.value
+const x = i => 52 + (i + 0.5) * plotWidth / size.value
 const y = value => 140 - value / extent.value * 112
-const barWidth = computed(() => plotWidth.value / size.value * 0.38)
+const quantizationLevels = computed(() => Array.from(
+  { length: 2 ** bits.value - 2 },
+  (_, index) => -rail.value + (index + 1) * result.value.delta,
+))
+// Keep dense high-resolution grids readable behind the coordinate bars.
+const quantizationGridOpacity = computed(() => Math.min(0.45, Math.max(0.08,
+  (y(-rail.value) - y(rail.value)) / (2 ** bits.value - 1) * 0.12,
+)))
+const barWidth = computed(() => plotWidth / size.value * 0.38)
 const coordinateTicks = computed(() => [...new Set([0, Math.floor(size.value / 4), Math.floor(size.value / 2), Math.floor(size.value * 3 / 4), size.value - 1])])
 const errorRows = computed(() => mode.value === 'custom' ? [...methods.value, { id: 'custom', label: 'Custom rail', rail: rail.value, result: result.value }] : methods.value)
 const errorBounds = computed(() => {
@@ -59,7 +76,7 @@ const errorTicks = computed(() => logarithmic.value
     <div class="converter-controls">
       <div class="converter-control"><label :for="controlId('distribution')">Input distribution</label><select :id="controlId('distribution')" v-model="distribution"><option value="gaussian">Gaussian</option><option value="laplacian">Laplacian</option></select></div>
       <div class="converter-control"><label :for="controlId('size')">Vector size <output>{{ size }}</output></label><input :id="controlId('size')" v-model.number="size" type="range" min="8" max="256" step="8" /></div>
-      <div class="converter-control"><label :for="controlId('bits')">Resolution <output>{{ bits }} bits</output></label><input :id="controlId('bits')" v-model.number="bits" type="range" min="2" max="9" step="1" /></div>
+      <div class="converter-control"><label :for="controlId('bits')">Resolution <output>{{ bits }} bits</output></label><input :id="controlId('bits')" v-model.number="bits" type="range" min="2" max="9" step="1" /><small class="converter-resolution-note">{{ intervals + 1 }} levels · <MathTex :tex="`K=${intervals}`" /> intervals</small></div>
       <div class="converter-control"><label :for="controlId('rail')">Rail <MathTex tex="\pm C" /> <output>{{ rail.toFixed(3) }}</output></label><input :id="controlId('rail')" :value="rail" type="range" :min="maximum * 0.02" :max="railLimit" :step="maximum / 1000" @input="setRail" /></div>
       <div v-if="!simplified" class="converter-sample-actions"><button type="button" @click="seed += 1">New sample</button><button type="button" @click="reset">Reset</button></div>
       <div v-if="!simplified" class="converter-pipeline"><span>Prescale digitally</span><b><MathTex tex="x/C" /></b><span>Fixed physical DAC rail</span><b><MathTex tex="[-1,1]" /></b><span>Restore the digital scale</span><b><MathTex tex="C Q_{K,1}(x/C)" /></b></div>
@@ -67,11 +84,15 @@ const errorTicks = computed(() => logarithmic.value
     <div class="converter-chart">
       <div v-if="!simplified" class="converter-presets" role="group" aria-label="Rail method"><button v-for="method in methods" :key="method.id" type="button" :aria-pressed="mode === method.id" @click="preset(method.id)">{{ method.label }}</button></div>
       <div class="converter-figure-heading"><h4>Vector coordinates</h4><span><template v-if="!simplified">{{ selected?.label || 'Custom rail' }} · </template><MathTex :tex="`C = ${rail.toFixed(3)}`" /></span></div>
-      <div class="plot-legend"><span><i class="original-key"></i>Original</span><span><i class="reconstructed-key"></i>Reconstructed</span><span><i class="clipped-key"></i>Clipped input</span></div>
-      <div class="converter-vector-scroll" tabindex="0" aria-label="Vector bar plot; scroll horizontally for large vectors">
-        <svg class="converter-vector-plot" :viewBox="`0 0 ${vectorWidth} 295`" :style="{ minWidth: `${vectorWidth}px` }" role="group" :aria-label="`${size} ${distribution} input coordinates and their reconstruction using ${selected?.label || 'a custom rail'}, with ${bits} bits`">
+      <div class="plot-legend"><span><i class="original-key"></i>Original</span><span><i class="reconstructed-key"></i>Reconstructed</span><span><i class="clipped-key"></i>Clipped input</span><span><i class="quantization-level-key"></i>{{ 2 ** bits }} quantization levels</span></div>
+      <div class="converter-vector-frame">
+        <svg class="converter-vector-plot" :viewBox="`0 0 ${vectorWidth} 295`" role="group" :aria-label="`${size} ${distribution} input coordinates and their reconstruction using ${selected?.label || 'a custom rail'}, with ${bits} bits`">
           <g v-for="value in [-extent / 1.15, 0, extent / 1.15]" :key="value"><line x1="52" :y1="y(value)" :x2="vectorWidth - 33" :y2="y(value)" stroke="var(--border)"/><text x="44" :y="y(value) + 4" text-anchor="end">{{ value.toFixed(1) }}</text></g>
           <rect x="52" :y="y(rail)" :width="plotWidth" :height="y(-rail) - y(rail)" fill="var(--primary-soft)" opacity=".6" />
+          <g class="converter-quantization-grid" :opacity="quantizationGridOpacity" aria-hidden="true">
+            <line v-for="(level, index) in quantizationLevels" :key="index" :data-level="level"
+              x1="52" :y1="y(level)" :x2="vectorWidth - 33" :y2="y(level)" />
+          </g>
           <line v-for="v in [-rail, rail]" :key="v" x1="52" :y1="y(v)" :x2="vectorWidth - 33" :y2="y(v)" stroke="var(--primary-dark)" stroke-dasharray="5 4" />
           <text :x="vectorWidth - 27" :y="y(rail) + 4">+C</text><text :x="vectorWidth - 27" :y="y(-rail) + 4">−C</text>
           <line x1="52" :y1="y(0)" :x2="vectorWidth - 33" :y2="y(0)" stroke="var(--muted)" />
@@ -84,15 +105,15 @@ const errorTicks = computed(() => logarithmic.value
           <text :x="vectorWidth / 2" y="290" text-anchor="middle">Vector coordinate · same sample for every rail method</text>
         </svg>
       </div>
-      <p class="converter-scroll-hint">Hover or focus a coordinate for its values. Scroll horizontally when the vector extends beyond the plot.</p>
+      <p class="converter-coordinate-hint">All {{ size }} coordinates fit in the plot. Hover or focus a coordinate for its values.</p>
       <div class="converter-stats" aria-live="polite" aria-atomic="true"><div><span>Clipped</span><b>{{ result.clipped }} / {{ signal.length }}</b></div><div><span>Step size</span><b>{{ rail ? result.delta.toPrecision(3) : '0' }}</b></div><div><span>Normalized MSE</span><b>{{ scientific(result.nmse) }}</b></div></div>
-      <p class="converter-explanation" aria-live="polite"><template v-if="simplified">The rail sets the input range: a narrow rail clips large coordinates; a wide rail spreads the conversion levels apart.</template><template v-else-if="mode === 'max'">CA sets <MathTex tex="C=\lVert x\rVert_\infty" />. It uses the full DAC range without input clipping and cheaply approximates rail optimization; it need not minimize finite-bit MSE.</template><template v-else>{{ explanations[mode] }}</template></p>
+      <p class="converter-explanation" aria-live="polite"><template v-if="simplified">The rail sets the input range: a narrow rail clips large coordinates; a wide rail spreads the conversion levels apart.</template><template v-else-if="mode === 'max'">CA sets <MathTex tex="C=\lVert x\rVert_\infty" />. It uses the full DAC range without input clipping and cheaply approximates rail optimization; it need not minimize finite-bit MSE.</template><template v-else-if="selected?.model"><strong v-if="selected.model !== distribution">Prior mismatch: {{ aciqModelName }} model on {{ inputModelName }} inputs.</strong> {{ explanations[mode] }} <MathTex :tex="aciqCalculation" />; the displayed sample maximum is <MathTex :tex="`\\lVert x\\rVert_\\infty=${maximum.toFixed(3)}`" />. A population-optimal approximation can exceed a short sample’s maximum; it does not optimize this vector’s exact MSE.</template><template v-else>{{ explanations[mode] }}</template></p>
     </div>
   </div>
   <div v-if="!simplified" class="converter-error-comparison">
     <div class="converter-figure-heading"><h4>Reconstruction error by rail method</h4><label><input v-model="logarithmic" type="checkbox" /> Log error axis</label></div>
-    <p class="converter-error-caption">Same {{ size }}-coordinate {{ distribution === 'gaussian' ? 'Gaussian' : 'Laplacian' }} sample, {{ bits }} bits, and quantizer. Select a bar to apply its rail; scroll horizontally on small screens.</p>
-    <div class="converter-error-scroll">
+    <p class="converter-error-caption">Measured error on the same {{ size }}-coordinate {{ distribution === 'gaussian' ? 'Gaussian' : 'Laplacian' }} sample and {{ bits }}-bit quantizer. Optimal Rail fits this sample; ACIQ fits an assumed population. Select a bar to apply its rail.</p>
+    <div class="converter-error-frame">
       <svg class="converter-error-plot" :viewBox="`0 0 600 ${errorRows.length * 40 + 55}`" role="group" aria-label="Normalized MSE comparison of rail methods; lower error is better">
         <g v-for="tick in errorTicks" :key="tick"><line :x1="errorX(tick)" y1="8" :x2="errorX(tick)" :y2="errorRows.length * 40" stroke="var(--border)"/><text :x="errorX(tick)" :y="errorRows.length * 40 + 21" text-anchor="middle">{{ scientific(tick) }}</text></g>
         <g v-for="(method, i) in errorRows" :key="method.id" class="converter-error-row" role="button" tabindex="0" :aria-label="`${method.label}, rail ${method.rail.toFixed(4)}, normalized MSE ${scientific(method.result.nmse)}`" :aria-pressed="mode === method.id" @click="preset(method.id)" @keydown.enter.prevent="preset(method.id)" @keydown.space.prevent="preset(method.id)">
@@ -104,6 +125,6 @@ const errorTicks = computed(() => logarithmic.value
         <text x="326" :y="errorRows.length * 40 + 48" text-anchor="middle">Normalized MSE · {{ logarithmic ? 'log scale' : 'linear scale' }} · lower is better</text>
       </svg>
     </div>
-    <p class="demo-caption">Optimal Rail minimizes the displayed vector’s MSE over positive scalar rails. ACIQ uses fitted, zero-mean Gaussian or Laplace statistics and the authors’ analytical error model; all bars evaluate the same endpoint quantizer. <a href="https://github.com/submission2019/cnn-quantization/blob/master/mse_analysis.py" rel="noreferrer">ACIQ model source</a>.</p>
+    <p class="demo-caption">Optimal Rail minimizes this vector’s MSE over positive scalar rails. ACIQ uses an assumed Gaussian or Laplace population and is adapted to this endpoint quantizer: <MathTex tex="K=2^b-1" /> intervals, step <MathTex tex="\Delta=2C/K" />, and approximate rounding error <MathTex tex="\Delta^2/12=C^2/(3K^2)" />. All methods use the same resolution. <a href="https://github.com/submission2019/cnn-quantization/blob/master/mse_analysis.py" rel="noreferrer">Original ACIQ model</a>.</p>
   </div>
 </template>
