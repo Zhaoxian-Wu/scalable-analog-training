@@ -86,6 +86,19 @@
           </ul>
         </section>
 
+        <section id="results" class="results-highlight" aria-labelledby="results-heading">
+          <!-- <h2 id="results-heading">Scaling results</h2> -->
+          <p>This work presents the possibility to train a GPT2-like Transformers trained from scratch on analog in-memory computing hardware. The evaluations are based on IBM AIHWKit simulations include finite conversion resolution and range, input/output noise, and asymmetric, discrete device programming calibrated to ECRAM measurements.</p>
+          <!-- <div class="result-strip" aria-label="Headline results"><div><strong>123.6M</strong><span>Largest evaluated model</span></div><div><strong>2.47B</strong><span>Processed tokens</span></div><div><strong>−0.231</strong><span>Analog loss-scaling exponent</span></div><div><strong>−0.238</strong><span>Digital loss-scaling exponent</span></div></div> -->
+          <div class="result-strip" aria-label="Headline results"><div><strong>123.6M</strong><span>Largest evaluated model</span></div><div><strong>2.47B</strong><span>Processed tokens</span></div><div><strong>−0.231</strong><span>Analog loss-scaling exponent</span></div><div><strong>−0.238</strong><span>Digital loss-scaling exponent</span></div></div>
+          <div class="interactive-demo" aria-labelledby="scaling-results-heading">
+            <div class="demo-head"><h3 id="scaling-results-heading">Explore the scaling figure</h3><span class="schematic-label">Three views · overlaid fits</span></div>
+            <p class="demo-instructions">Explore model size, token trajectories, and compute trajectories, with endpoint fits drawn directly on each plot. Inspect points for exact values; select a model to compare its analog and digital learning curves.</p>
+            <div id="scaling-results-demo"><figure><a href="assets/scaling-results.png" aria-label="Open full-size Transformer scaling results"><img src="assets/scaling-results.png" alt="Five panels showing the manuscript’s analog and digital Transformer training results across model scales." loading="lazy"></a><figcaption>Preliminary scaling results under the Chinchilla-style training protocol. Parameter-scaling fits yield \(L\propto N^{-0.231}\) for analog training and \(L\propto N^{-0.238}\) for digital AdamW. One seed per condition.</figcaption></figure></div>
+          </div>
+          <div class="callout"><p><strong>How to read the result.</strong> Similar scaling exponents indicate comparable loss improvement with increasing model size over the evaluated range. Analog training still has a persistent validation-loss gap relative to the digital baseline.</p></div>
+        </section>
+
         <section id="aimc" aria-labelledby="aimc-heading">
           <h2 id="aimc-heading">Analog in-memory computing</h2>
           <p>Matrix multiplication is a central operation in neural networks. In conventional digital hardware, computing it requires moving weights from memory to a processor. Analog in-memory computing (AIMC) stores weights as conductances in non-volatile memory crossbars and performs the multiplication where those weights reside, reducing data movement and offering an energy-efficient way to execute matrix operations.</p>
@@ -244,18 +257,6 @@ C_{\mathrm{ACIQ}}&amp;\in\operatorname*{arg\,min}_{C&gt;0}\widetilde E_{f,K}(C),
               <p>These results support a low-overhead, distribution-agnostic training policy, without claiming universal finite-bit optimality. At six bits, the 10% criterion holds through \(D=1{,}024\), and the gap opens around \(D=2{,}048\), especially for Laplace inputs. ACIQ can be useful when its prior matches, particularly at low precision. This experiment isolates input quantization; it does not measure end-to-end training accuracy or energy.</p>
             </div>
           </details>
-        </section>
-
-        <section id="results">
-          <h2>Scaling results</h2>
-          <p>The current study evaluates decoder-only Transformers trained from scratch on OpenWebText, from approximately 6.8M to 123.6M parameters. IBM AIHWKit simulations include finite conversion resolution and range, input/output noise, and asymmetric, discrete device programming calibrated to ECRAM measurements.</p>
-          <div class="result-strip"><div><strong>123.6M</strong><span>Largest evaluated model</span></div><div><strong>−0.231</strong><span>Analog loss-scaling exponent</span></div><div><strong>−0.238</strong><span>Digital loss-scaling exponent</span></div></div>
-          <div class="interactive-demo" aria-labelledby="scaling-results-heading">
-            <div class="demo-head"><h3 id="scaling-results-heading">Explore the scaling figure</h3><span class="schematic-label">Three views · overlaid fits</span></div>
-            <p class="demo-instructions">Explore model size, token trajectories, and compute trajectories, with endpoint fits drawn directly on each plot. Inspect points for exact values; select a model to compare its analog and digital learning curves.</p>
-            <div id="scaling-results-demo"><figure><a href="assets/scaling-results.png" aria-label="Open full-size Transformer scaling results"><img src="assets/scaling-results.png" alt="Five panels showing the manuscript’s analog and digital Transformer training results across model scales." loading="lazy"></a><figcaption>Preliminary scaling results under the Chinchilla-style training protocol. Parameter-scaling fits yield \(L\propto N^{-0.231}\) for analog training and \(L\propto N^{-0.238}\) for digital AdamW. One seed per condition.</figcaption></figure></div>
-          </div>
-          <div class="callout"><p><strong>How to read the result.</strong> Similar scaling exponents indicate comparable loss improvement with increasing model size over the evaluated range. Analog training still has a persistent validation-loss gap relative to the digital baseline.</p></div>
         </section>
 
         <section id="research-call" aria-labelledby="research-call-heading">
