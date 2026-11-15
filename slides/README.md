@@ -240,6 +240,12 @@ base path, for example `npm run build -- --base /slides/`.
 Optional PDF export: install `playwright-chromium` as a development dependency,
 then run `npm run export`. Export requires a working Chromium installation.
 
+### GitHub Pages
+
+The public presentation is hosted at <https://zhaoxian-wu.github.io/scalable-analog-training/slides/>. Push changes to the `slides` branch to publish automatically. The shared workflow on `website` builds both the homepage and this deck, copying the deck into the deployed site's `slides/` directory. Both branch workflows use the same Pages deployment concurrency group. Pull requests only validate the slide build.
+
+The production build uses `npm run build -- --base /scalable-analog-training/slides/` so scripts, images, and slide routes resolve under the repository's Pages URL. The repository Pages source must be **GitHub Actions**, and the `github-pages` environment must permit both `website` and `slides`. See the [GitHub custom-workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
 ## Edit
 
 To tune the training-power chart's vertical size without stretching its text,

@@ -1,4 +1,4 @@
-name: Build slides
+name: Build and publish slides
 
 on:
   push:
@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   build:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
@@ -31,3 +32,11 @@ jobs:
       - name: Build slides
         working-directory: slides
         run: npm run build -- --base /scalable-analog-training/slides/
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/slides'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: Zhaoxian-Wu/scalable-analog-training/.github/workflows/website-pages.yml@website
