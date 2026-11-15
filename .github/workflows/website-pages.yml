@@ -1,8 +1,9 @@
-name: Deploy website
+name: Deploy website and slides
 
 on:
   push:
     branches: [website]
+  workflow_call:
 
 permissions:
   contents: read
@@ -21,13 +22,25 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Check out website
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref == 'refs/heads/website' && github.sha || 'website' }}
+
+      - name: Check out slides
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref == 'refs/heads/slides' && github.sha || 'slides' }}
+          path: _slides
+          sparse-checkout: slides
 
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
           cache: npm
-          cache-dependency-path: website/package-lock.json
+          cache-dependency-path: |
+            website/package-lock.json
+            _slides/slides/package-lock.json
 
       - uses: actions/setup-python@v6
         with:
@@ -45,6 +58,17 @@ jobs:
 
       - name: Build static website
         run: python3 website/build.py
+
+      - name: Install slide dependencies
+        working-directory: _slides/slides
+        run: npm ci
+
+      - name: Build slides for the Pages subdirectory
+        working-directory: _slides/slides
+        run: npm run build -- --base /scalable-analog-training/slides/
+
+      - name: Include slides in the website artifact
+        run: cp -a _slides/slides/dist website/dist/slides
 
       - uses: actions/upload-pages-artifact@v4
         with:

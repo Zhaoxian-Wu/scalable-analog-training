@@ -176,8 +176,9 @@ conda run --no-capture-output -n analog-slides node website/build-interactives.m
 python3 website/build.py
 ```
 
-Pushes to the `website` branch run the GitHub Pages workflow, rebuild the
-interactive bundle and `website/dist/`, and deploy the generated artifact.
+Pushes to either `website` or `slides` run the shared GitHub Pages workflow on the `website` branch. It checks out both branches, rebuilds the homepage and Slidev deck, and deploys one artifact with the homepage at <https://zhaoxian-wu.github.io/scalable-analog-training/> and the deck at <https://zhaoxian-wu.github.io/scalable-analog-training/slides/>. The slide build uses `--base /scalable-analog-training/slides/` and is copied into `website/dist/slides/` before upload. Both entry points share the `pages` concurrency group.
+
+In repository **Settings → Pages**, select **GitHub Actions** as the publishing source. Under **Settings → Environments → github-pages → Deployment branches and tags**, allow both `website` and `slides`. The `slides` branch calls `.github/workflows/website-pages.yml@website`; its pull requests only build and never deploy.
 
 ## Content provenance
 
